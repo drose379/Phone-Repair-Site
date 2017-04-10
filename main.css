@@ -113,7 +113,6 @@ body {
 .home-right .home-info-container {
   display: flex;
   flex-direction: column;
-  background-color: blue;
 }
 
 .info-container {
@@ -127,8 +126,6 @@ body {
   margin-top: 1vh;
   margin-bottom: 1vh;
   color: #ecf0f1;
-
-  background-color: red;
 }
 
 
