@@ -85,12 +85,16 @@ body {
   flex-direction: row;
 }
 
+.wrapper {
+  background-color: blue;
+  width: 100%;
+  display: flex;
+}
+
 .home-left {
   display: flex;
   flex-direction: column;
-  padding-top: 8em;
-  padding-left: 4em;
-  padding-right: 4em;
+  justify-content: center;
 }
 
 .home-left h2 {
@@ -164,7 +168,6 @@ body {
 .down-arrow {
   height: 5vh;
   margin-bottom: 1vh;
-  background-color: red;
   animation: bounce 5s infinite;
 }
 
@@ -174,6 +177,8 @@ body {
   20% {transform: translateY(0)}
   100% {transform: translateY(0);}
 }
+
+
 
 /**
 @keyframes bounce {
