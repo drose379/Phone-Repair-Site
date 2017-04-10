@@ -28,13 +28,20 @@ body {
 }
 
 .nav {
+
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+
+  /*
+  border-bottom: 5px solid #868686;
+  */
   display: flex;
   flex-direction: row;
   flex-grow: 0;
   padding-top: 2em;
-  border-bottom: 5px solid #868686;
-  margin-left: 4em;
-  margin-right: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .nav h1 {
@@ -49,6 +56,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+    border-bottom: 5px solid #868686;
+}
+
+.nav-left {
+    border-bottom: 5px solid #868686;
 }
 
 .nav-bar {
@@ -83,12 +95,6 @@ body {
   margin-right: 4em;
   display: flex;
   flex-direction: row;
-}
-
-.wrapper {
-  background-color: blue;
-  width: 100%;
-  display: flex;
 }
 
 .home-left {
@@ -160,6 +166,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  cursor: pointer;
 }
 
 .arrow-down img {
@@ -178,6 +185,10 @@ body {
   10% {transform: translateY(-30px);}
   20% {transform: translateY(0)}
   100% {transform: translateY(0);}
+}
+
+.pricing-container {
+  padding: 10em;
 }
 
 
