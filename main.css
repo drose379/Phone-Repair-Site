@@ -39,7 +39,8 @@ body {
 
 .nav h1 {
   letter-spacing: 0.1em;
-  font-size: 3.5em;
+  /*font-size: 3.5em;*/
+  font-size: 3vw;
   display: block;
   margin: 0;
 }
@@ -66,7 +67,10 @@ body {
 
 .nav-item h4 {
   margin: 0;
+  /*
   font-size: 1.5em;
+  */
+  font-size: 1.5vw;
 }
 
 .accent {
@@ -90,7 +94,8 @@ body {
 }
 
 .home-left h2 {
-  font-size: 4em;
+  /*font-size: 4em;*/
+  font-size: 3vw;
   color: #ecf0f1;
 }
 
@@ -114,7 +119,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /*
   font-size: 1.8em;
+  */
+  font-size: 2vw;
   margin-bottom: 0.7em;
   color: #ecf0f1;
 }
