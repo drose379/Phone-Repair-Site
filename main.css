@@ -95,12 +95,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .home-left h2 {
   /*font-size: 4em;*/
   font-size: 3vw;
   color: #ecf0f1;
+  text-align: center;
 }
 
 .home-left button {
