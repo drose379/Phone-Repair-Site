@@ -113,6 +113,7 @@ body {
 .home-right .home-info-container {
   display: flex;
   flex-direction: column;
+  background-color: blue;
 }
 
 .info-container {
@@ -123,8 +124,11 @@ body {
   font-size: 1.8em;
   */
   font-size: 1.5vw;
-  margin-bottom: 0.7em;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   color: #ecf0f1;
+
+  background-color: red;
 }
 
 
