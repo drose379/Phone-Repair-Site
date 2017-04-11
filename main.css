@@ -165,6 +165,13 @@ font-size: 1.8em;
   bottom: 0;
   width: 2.5vw;
   animation: bounce 4s infinite;
+  cursor: pointer;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.arrow-down img {
+  max-width: 100%;
 }
 
 @keyframes bounce {
@@ -174,9 +181,7 @@ font-size: 1.8em;
   100% {transform: translateY(0);}
 }
 
-.arrow-down img {
-  max-width: 100%;
-}
+
 
 .pricing-ui {
   height: 100vh;

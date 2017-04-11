@@ -46,7 +46,9 @@ $(function() {
   });
 });
 
-  /* Fade out home container when scrolled up */
+  $('.arrow-down').click( function() {
+    $.scrollify.next();
+  } )
 
 } );
 
