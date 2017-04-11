@@ -2,24 +2,21 @@
 
 body {
   margin: 0;
-}
-
-.bg {
-  width: 100%;
-  height: 100vh;
-  background: url('res/bg-2.jpeg');
-  background-position: center;
-  background-size: cover;
-  color: #868686;
+  background: url('res/bg-2.jpeg') no-repeat center center fixed;
   font-family: 'Oswald', sans-serif
 }
 
-.layer {
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  background-color: rgba( 34,34,34, 0.95 );
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  background: rgb( 34,34,34 );
+  opacity: .95;
+  z-index: -1;
 }
 
 .equal-width {
@@ -27,92 +24,91 @@ body {
   flex-basis: 0;
 }
 
+/** User should not be able to actually scroll, their scroll action fires a full page scroll see  scrollify JS lib */
+
+.flex-container-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .nav {
-
-  position: fixed;
-  box-sizing: border-box;
   width: 100%;
-
-  /*
-  border-bottom: 5px solid #868686;
-  */
+  z-index: 5000;
+  position: fixed;
   display: flex;
   flex-direction: row;
   flex-grow: 0;
   padding-top: 2em;
   padding-left: 4em;
   padding-right: 4em;
+  box-sizing: border-box;
 }
 
 .nav h1 {
-  letter-spacing: 0.1em;
-  /*font-size: 3.5em;*/
-  font-size: 3vw;
-  display: block;
-  margin: 0;
-}
-
-.nav .nav-contain {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-    border-bottom: 5px solid #868686;
+  color: #868686;
 }
 
 .nav-left {
-    border-bottom: 5px solid #868686;
+  border-bottom: 5px solid #868686;
 }
 
-.nav-bar {
+.nav-right {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 5px solid #868686;
 }
 
-.nav-bar .nav-item {
-  margin-left: 2em;
+.nav-right .nav-item {
+  margin-left:2em;
   margin-right: 2em;
   margin-bottom: 1em;
   color: #ecf0f1;
   cursor: pointer;
 }
 
+#home {
+  color: #4484C8;
+}
+
 .nav-item h4 {
   margin: 0;
-  /*
-  font-size: 1.5em;
-  */
   font-size: 1.5vw;
+}
+
+.nav h1 {
+  font-size: 3vw;
+  letter-spacing: 0.1em;
+  display: block;
+  margin: 0;
+  letter-spacing:
 }
 
 .accent {
   color: #4484C8;
 }
 
-.rest {
-  flex-grow: 1;
-  margin-left: 4em;
-  margin-right: 4em;
+.home-content {
+  height: 100vh;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
-.home-left {
+.home-content .home-left {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .home-left h2 {
-  /*font-size: 4em;*/
   font-size: 3vw;
   color: #ecf0f1;
   text-align: center;
-}
-
-.home-left button {
-  display: inline;
 }
 
 .home-right {
@@ -122,7 +118,8 @@ body {
   align-items: center;
 }
 
-.home-right .home-info-container {
+
+.info-container-master {
   display: flex;
   flex-direction: column;
 }
@@ -131,22 +128,21 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*
-  font-size: 1.8em;
-  */
+/*
+font-size: 1.8em;
+*/
   font-size: 1.5vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
   color: #ecf0f1;
 }
 
-
-.info-container h3 {
+.info-container p {
   margin: 0;
 }
 
-.info-container p {
-   margin: 0;
+.info-container h3 {
+  margin: 0;
 }
 
 .info-icon {
@@ -155,59 +151,22 @@ body {
   height: 4vw;
 }
 
-.col {
+
+
+
+
+.pricing-ui {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.arrow-down {
-  display: flex;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  cursor: pointer;
 }
 
-.arrow-down img {
-  max-height: 100%;
-  max-width: 100%;
+.ui {
+
 }
 
-.down-arrow {
-  height: 5vh;
-  margin-bottom: 1vh;
-  animation: bounce 5s infinite;
+.ui h1 {
+  text-align: center;
+  color: #ecf0f1;
 }
-
-@keyframes bounce {
-  0% {transform: translateY(0)}
-  10% {transform: translateY(-30px);}
-  20% {transform: translateY(0)}
-  100% {transform: translateY(0);}
-}
-
-.pricing-container {
-  padding: 10em;
-}
-
-
-
-/**
-@keyframes bounce {
-  0% {transform: translateY(0);}
-  5% {transform: translateY(-30px);}
-  10% {transform: translateY(0);}
-  15% {transform: translateY(-15px);}
-  20% {transform: translateY(0);}
-  30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {transform: translateY(0);}
-}
-**/
-
-/**
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  40% {transformY(-30px)}
-  60% {transformy(-15px)}
-}
-**/
