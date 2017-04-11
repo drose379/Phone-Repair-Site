@@ -16,11 +16,18 @@ $(function() {
         //$('.home-content').fadeOut( 70 );
         $('.home-content').animate({opacity: 0}, 70);
 
+        $('#home').animate( {color: '#ecf0f1'}, 300 );
+        $('#pricing').animate({color: '#4484C8'}, 300 );
+
       } else if( toSection == 0 ) {
 
         setTimeout( function() {
           //$('.home-content').fadeIn();
           $('.home-content').animate({opacity: 1}, 500);
+
+          $('#pricing').animate( {color: '#ecf0f1'}, 300 );
+          $('#home').animate( {color: '#4484C8'}, 300 );
+
         }, 300 );
 
       }
@@ -42,13 +49,22 @@ $(function() {
       }
       */
 
+
     }
   });
 });
 
   $('.arrow-down').click( function() {
     $.scrollify.next();
-  } )
+  } );
+
+  $('#pricing').click( function() {
+    $.scrollify.next();
+  } );
+
+  $('#home').click( function() {
+    $.scrollify.previous();
+  } );
 
 } );
 
