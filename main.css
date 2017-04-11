@@ -163,15 +163,16 @@ font-size: 1.8em;
 .arrow-down {
   position: absolute;
   bottom: 0;
+  left: 50%;
   width: 2.5vw;
   animation: bounce 4s infinite;
   cursor: pointer;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 
 .arrow-down img {
   max-width: 100%;
+  position: relative;
+  left: -50%;
 }
 
 @keyframes bounce {
