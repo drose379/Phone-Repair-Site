@@ -94,10 +94,18 @@ body::before {
 .home-content {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-left: 4em;
   margin-right: 4em;
+}
+
+.home-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .home-content .home-left {
@@ -152,8 +160,23 @@ font-size: 1.8em;
 }
 
 
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  width: 2.5vw;
+  animation: bounce 4s infinite;
+}
 
+@keyframes bounce {
+  0% {transform: translateY(0)}
+  10% {transform: translateY(-30px);}
+  20% {transform: translateY(0)}
+  100% {transform: translateY(0);}
+}
 
+.arrow-down img {
+  max-width: 100%;
+}
 
 .pricing-ui {
   height: 100vh;
