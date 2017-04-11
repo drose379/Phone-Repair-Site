@@ -13,12 +13,14 @@ $(function() {
 
       if( toSection == 1 ) {
 
-        $('.home-content').fadeOut( 70 );
+        //$('.home-content').fadeOut( 70 );
+        $('.home-content').animate({opacity: 0}, 70);
 
       } else if( toSection == 0 ) {
 
         setTimeout( function() {
-          $('.home-content').fadeIn();
+          //$('.home-content').fadeIn();
+          $('.home-content').animate({opacity: 1}, 500);
         }, 300 );
 
       }
