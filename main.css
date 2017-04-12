@@ -192,10 +192,53 @@ font-size: 1.8em;
 }
 
 .ui {
-
+  display: flex;
+  width: 100%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  justify-content: center;
 }
 
-.ui h1 {
-  text-align: center;
+.device-type-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em;
+}
+
+.device-type {
+  margin: 2em;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba( 255,255,255, 0.1 );
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.device-type:hover {
+  background-color: rgba( 68, 132, 200, 0.5 );
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.device-type-select h1 {
   color: #ecf0f1;
+}
+
+.device-type h3 {
+  font-size: 3vw;
+  margin: 0;
+  color: #ecf0f1;
+}
+
+.device-type img {
+  height: 25vh;
 }
