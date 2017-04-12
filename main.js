@@ -86,5 +86,13 @@ $(function() {
 
   });
 
+  $('.back').click( function() {
+    $('.iphone-model-select').fadeOut( 'fast' );
+    $('.ui-nav').fadeOut( 'fast' );
+    setTimeout( function() {
+      $('.device-type-select').fadeIn();
+    }, 300 );
+  } );
+
 
 });
