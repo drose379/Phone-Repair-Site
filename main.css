@@ -241,5 +241,6 @@ font-size: 1.8em;
 }
 
 .device-type img {
+  margin-bottom: 1vh;
   height: 25vh;
 }
