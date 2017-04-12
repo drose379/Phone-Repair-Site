@@ -17,7 +17,6 @@ $(function() {
 
       if( toSection == 1 ) {
 
-        //$('.home-content').fadeOut( 70 );
         $('.home-content').animate({opacity: 0}, 70);
 
         $('#home').animate( {color: '#ecf0f1'}, 300 );
@@ -26,7 +25,6 @@ $(function() {
       } else if( toSection == 0 ) {
 
         setTimeout( function() {
-          //$('.home-content').fadeIn();
           $('.home-content').animate({opacity: 1}, 500);
 
           $('#pricing').animate( {color: '#ecf0f1'}, 300 );
@@ -35,24 +33,6 @@ $(function() {
         }, 300 );
 
       }
-
-    },
-    after: function( currentSection ) {
-
-      // currentSection = 1 means heading to the below section
-      // currentSection of 0 means heading to the above home section
-
-      /**
-      if( currentSection == 0 ) {
-        $('.home-content').fadeIn();
-        $('#home').css( 'color', '#4484C8' );
-        $('#pricing').css( 'color', '#ecf0f1' );
-      } else {
-        $('#pricing').css( 'color', '#4484C8' );
-        $('#home').css( 'color', '#ecf0f1' );
-      }
-      */
-
 
     }
   });
@@ -70,12 +50,41 @@ $(function() {
     $.scrollify.previous();
   } );
 
-} );
 
-/**
+  var iphone = $('#iphone');
+  var ipad = $('#ipad');
 
-$(window).scroll( function(event) {
-  var scrollAmount = $(window).scrollTop();
+
+  iphone.click( function() {
+    iphone.css( 'background-color', 'rgba( 68, 132, 200, 0.5 )' );
+    ipad.css( 'background-color', 'rgba( 255,255,255, 0.1 )' );
+
+    setTimeout( function(){
+      $('.device-type-select').fadeOut( 'fast' );
+    }, 300 );
+
+    setTimeout( function() {
+      $('.iphone-model-select').fadeIn().css( 'display', 'flex' );
+      $('.ui-nav').fadeIn().css( 'display', 'flex' );
+    }, 500 );
+
+  });
+
+
+
+  ipad.click( function() {
+    ipad.css( 'background-color', 'rgba( 68, 132, 200, 0.5 )' );
+    iphone.css( 'background-color', 'rgba( 255,255,255, 0.1 )' );
+
+    setTimeout( function(){
+      $('.device-type-select').fadeOut( 'fast' );
+    }, 300 );
+
+    setTimeout( function() {
+      $('.ipad-model-select').fadeIn();
+    }, 500 );
+
+  });
+
+
 });
-
-*/
