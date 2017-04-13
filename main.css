@@ -204,19 +204,15 @@ font-size: 1.8em;
   display: flex;
   flex-direction: row;
   display: none;
-  padding-left: 4em;
-  padding-right: 4em;
+  margin-top: 3vh;
 }
 
 .ui-nav img {
-  margin: 2em;
-  padding: 1em;
   max-height: 100%;
-  height: 8vh;
+  height: 6vh;
   cursor: pointer;
   border-radius: 5%;
   transition: 0.2s;
-  border: 5px solid #4484C8;
 }
 
 .ui-nav img:hover {
@@ -279,6 +275,13 @@ font-size: 1.8em;
   align-items: center;
   color: #ecf0f1;
   display: none;
+}
+
+.iphone-model-select h1 {
+}
+
+.row .nav {
+  background-color: red;
 }
 
 .ipad-model-select {
