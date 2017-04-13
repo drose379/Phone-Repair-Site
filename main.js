@@ -2,8 +2,10 @@ $(document).ready( function() {
   $('.home-content').css( 'padding-top', $('.nav').height() / 2 ); // Need to add the 2 em of the navs margin to this number
   $('.pricing-ui').css( 'padding-top', $('.nav').height() / 2 );
 
+/*
   console.log( $('#ipad').outerWidth() );
   $('#iphone').outerWidth( $('#ipad').outerWidth() );
+*/
 
 $(function() {
   $.scrollify({

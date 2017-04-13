@@ -240,6 +240,7 @@ font-size: 1.8em;
   cursor: pointer;
   border-radius: 5%;
   border: 5px solid rgba(0,0,0,0);
+  width: 10vw;
 }
 
 .row {
