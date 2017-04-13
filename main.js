@@ -89,7 +89,7 @@ $(function() {
 
   });
 
-  $('.ui-nav').click( function() {
+  $('.ui-back').click( function() {
     $('.iphone-model-select').fadeOut( 'fast' );
     $('.ipad-model-select').fadeOut( 'fast' );
     $('.ui-nav').fadeOut( 'fast' );
