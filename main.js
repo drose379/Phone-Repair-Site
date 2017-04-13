@@ -1,11 +1,7 @@
 $(document).ready( function() {
-  $('.home-content').css( 'padding-top', $('.nav').height() / 2 ); // Need to add the 2 em of the navs margin to this number
-  $('.pricing-ui').css( 'padding-top', $('.nav').height() / 2 );
+  $('.home-content').css( 'padding-top', $('.nav').height() / 3 ); // Need to add the 2 em of the navs margin to this number
+  $('.pricing-ui').css( 'padding-top', $('.nav').height() / 3 );
 
-/*
-  console.log( $('#ipad').outerWidth() );
-  $('#iphone').outerWidth( $('#ipad').outerWidth() );
-*/
 
 $(function() {
   $.scrollify({
@@ -43,21 +39,50 @@ $(function() {
   $('.arrow-down').click( function() {
     $.scrollify.next();
   } );
-
   $('#pricing').click( function() {
     $.scrollify.next();
   } );
-
   $('#home').click( function() {
     $.scrollify.previous();
   } );
 
 
+
+// Pricing UI
+
+  // CurrentView:
+  // 0 = device type select
+  // 1 = device-model-select (IPHONE)
+  // 2 = device-model-select (IPAD)
+  // 3 = repair select
+  // 4 = quote price display
+
+  var VIEW_DEVICE_TYPE_SELECT         = 0;
+  var VIEW_DEVICE_MODEL_SELECT_IPHONE = 1;
+  var VIEW_DEVICE_MODEL_SELECT_IPAD   = 2;
+  var VIEW_DEVICE_REPAIR_SELECT       = 3;
+  var VIEW_QUOTE_PRICE                = 4;
+
+
+  var currentView = VIEW_DEVICE_TYPE_SELECT;
+
+  var DEVICE_TYPE_KEY = 'device-type';
+  var MODEL_TYPE_KEY  = "model";
+  var ISSUES_KEY      = 'issues';
+
+  var uiState = {
+    DEVICE_TYPE_KEY: "",
+    MODEL_TYPE_KEY:"",
+    ISSUES_KEY: []
+  };
+
   var iphone = $('#iphone');
   var ipad = $('#ipad');
 
-
   iphone.click( function() {
+    uiState[DEVICE_TYPE_KEY] = 'iphone';
+    currentView = VIEW_DEVICE_MODEL_SELECT_IPHONE;
+
     iphone.css( 'background-color', 'rgba( 68, 132, 200, 0.5 )' );
     ipad.css( 'background-color', 'rgba( 255,255,255, 0.1 )' );
 
@@ -71,10 +96,10 @@ $(function() {
     }, 500 );
 
   });
-
-
-
   ipad.click( function() {
+    uiState[DEVICE_TYPE_KEY] = 'ipad';
+    currentView = VIEW_DEVICE_MODEL_SELECT_IPAD;
+
     ipad.css( 'background-color', 'rgba( 68, 132, 200, 0.5 )' );
     iphone.css( 'background-color', 'rgba( 255,255,255, 0.1 )' );
 
@@ -90,12 +115,37 @@ $(function() {
   });
 
   $('.ui-back').click( function() {
-    $('.iphone-model-select').fadeOut( 'fast' );
-    $('.ipad-model-select').fadeOut( 'fast' );
-    $('.ui-nav').fadeOut( 'fast' );
-    setTimeout( function() {
-      $('.device-type-select').fadeIn();
-    }, 300 );
+
+    switch( currentView ) {
+      case VIEW_DEVICE_MODEL_SELECT_IPHONE:
+        $('.iphone-model-select').fadeOut( 'fast' );
+
+        $('.ui-nav').fadeOut( 'fast' );
+        setTimeout( function() {
+          $('.device-type-select').fadeIn();
+        }, 300 );
+
+
+        break;
+      case VIEW_DEVICE_MODEL_SELECT_IPAD:
+        $('.ipad-model-select').fadeOut( 'fast' );
+
+        $('.ui-nav').fadeOut( 'fast' );
+        setTimeout( function() {
+          $('.device-type-select').fadeIn();
+        }, 300 );
+
+        
+        break;
+    }
+
+
+
+  } );
+
+  $('.model').click( function() {
+    var model = $(this).data();
+    console.log( "Clicked model " + JSON.stringify( model ) );
   } );
 
 
