@@ -154,7 +154,15 @@ $(function() {
 
   $('.model').click( function() {
     var model = $(this).data()['model'];
+
+    $('.iphone-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)');
+    $('.ipad-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)'); // not working need  to set data refs on ipas
+
     uiState[MODEL_TYPE_KEY] = model;
+
+
+    // Need to de-select any other models, try to use from uiState[MODEL_TYPE] to grab by data attr
+
 
     $(this).css( 'background-color', 'rgba(68,132,200,0.5)' );
 
