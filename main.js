@@ -1,6 +1,6 @@
 $(document).ready( function() {
   $('.home-content').css( 'padding-top', $('.nav').height() / 3 ); // Need to add the 2 em of the navs margin to this number
-  $('.pricing-ui').css( 'padding-top', $('.nav').height() / 3 );
+  //$('.pricing-ui').css( 'padding-top', $('.nav').height() / 4 );
 
 
 $(function() {
@@ -63,24 +63,32 @@ $(function() {
   var VIEW_DEVICE_REPAIR_SELECT       = 3;
   var VIEW_QUOTE_PRICE                = 4;
 
-
   var currentView = VIEW_DEVICE_TYPE_SELECT;
 
   var DEVICE_TYPE_KEY = 'device-type';
   var MODEL_TYPE_KEY  = "model";
   var ISSUES_KEY      = 'issues';
 
-  var uiState = {
-    DEVICE_TYPE_KEY: "",
-    MODEL_TYPE_KEY:"",
-    ISSUES_KEY: []
-  };
+  var MODEL_IPHONE_4        = "iphone-4";
+  var MODEL_IPHONE_4_S      = "iphone-4s"
+  var MODEL_IPHONE_5        = "iphone-5";
+  var MODEL_IPHONE_5_S      = "iphone-5s";
+  var MODEL_IPHONE_5_C      = "iphone-5c";
+  var MODEL_IPHONE_6        = "iphone-6";
+  var MODEL_IPHONE_6_PLUS   = "iphone-6plus";
+  var MODEL_IPHONE_6_S_PLUS = "iphone-6splus";
+  var MODEL_IPHONE_SE       = "iphone-se";
+  var MODEL_IPHONE_7        = "iphone-7";
+  var MODEL_IPHONE_7_PLUS   = "iphone-7plus";
+
+  var uiState = {};
 
   var iphone = $('#iphone');
   var ipad = $('#ipad');
 
   iphone.click( function() {
     uiState[DEVICE_TYPE_KEY] = 'iphone';
+
     currentView = VIEW_DEVICE_MODEL_SELECT_IPHONE;
 
     iphone.css( 'background-color', 'rgba( 68, 132, 200, 0.5 )' );
@@ -113,40 +121,117 @@ $(function() {
     }, 500 );
 
   });
-
   $('.ui-back').click( function() {
 
     switch( currentView ) {
       case VIEW_DEVICE_MODEL_SELECT_IPHONE:
         $('.iphone-model-select').fadeOut( 'fast' );
-
-        $('.ui-nav').fadeOut( 'fast' );
-        setTimeout( function() {
-          $('.device-type-select').fadeIn();
-        }, 300 );
-
-
+        fadeOutUiNav();
+        currentView = VIEW_DEVICE_TYPE_SELECT;
         break;
       case VIEW_DEVICE_MODEL_SELECT_IPAD:
         $('.ipad-model-select').fadeOut( 'fast' );
+        fadeOutUiNav();
+        currentView = VIEW_DEVICE_TYPE_SELECT;
+        break;
+      case VIEW_DEVICE_REPAIR_SELECT:
+        $('.repair-select').fadeOut('fast');
 
-        $('.ui-nav').fadeOut( 'fast' );
         setTimeout( function() {
-          $('.device-type-select').fadeIn();
+          if( uiState[DEVICE_TYPE_KEY] == 'iphone' ) {
+            $('.iphone-model-select').fadeIn();
+            currentView = VIEW_DEVICE_MODEL_SELECT_IPHONE;
+          } else {
+            $('.ipad-model-select').fadeIn();
+            currentView = VIEW_DEVICE_MODEL_SELECT_IPAD;
+          }
         }, 300 );
 
-        
         break;
     }
-
-
 
   } );
 
   $('.model').click( function() {
-    var model = $(this).data();
-    console.log( "Clicked model " + JSON.stringify( model ) );
+    var model = $(this).data()['model'];
+    uiState[MODEL_TYPE_KEY] = model;
+
+    $(this).css( 'background-color', 'rgba(68,132,200,0.5)' );
+
+    setTimeout(function() {
+      if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
+        $('.iphone-model-select').fadeOut( 'fast' );
+      else
+        $('.ipad-model-select').fadeOut( 'fast' );
+
+      currentView = VIEW_DEVICE_REPAIR_SELECT;
+    },300);
+
+
+    setTimeout( function(){
+      $('.repair-select').fadeIn();
+    }, 500 );
+
+
+
+
   } );
 
 
+  var repairCount = 0;
+
+  /** Look into adding tooltip on repair button hovers */
+
+  $('.repair-item').click( function() {
+    var repair = $(this).data()['type'];
+    if( repair != 'more')  {
+
+      if( $(this).data()['selected'] ) {
+        $(this).data( 'selected', false );
+        $(this).removeClass( 'repair-item-selected' );
+        repairCount--;
+      } else {
+        $(this).data( 'selected', true );
+        $(this).addClass('repair-item-selected');
+        repairCount++;
+      }
+
+      if( repairCount > 0 ) {
+        $('.finish').css( 'opacity', 1 );
+      } else {
+        $('.finish').css( 'opacity', 0.3 );
+      }
+    }
+
+    // NEED TO TAKE CARE OF STORING THE SELECTIONS AND REMOVALS IN uiState obj array
+
+  } );
+
+  var isAllShowing = false;
+  $('#more').click(function() {
+    if( isAllShowing ) {
+      $('.secondary').fadeOut();
+      $(this).removeClass('hide-more');
+      $(this).addClass('show-more');
+      $(this).html("<h3>MORE</h3>");
+      isAllShowing = false;
+    } else {
+      $('.secondary').fadeIn().css('display','flex');
+      $(this).removeClass('show-more');
+      $(this).addClass('hide-more');
+      $(this).html("<h3>LESS</h3>");
+      isAllShowing = true;
+    }
+  });
+
+
+// End document.ready
 });
+
+
+function fadeOutUiNav() {
+  $('.ui-nav').fadeOut( 'fast' );
+  setTimeout( function() {
+    $('.device-type-select').fadeIn();
+  }, 300 );
+}

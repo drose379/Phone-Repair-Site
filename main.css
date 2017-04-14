@@ -187,6 +187,7 @@ font-size: 1.8em;
 .pricing-ui {
   height: 100vh;
   display: flex;
+  padding-top: 3vh;
   flex-direction: column;
   justify-content: center;
 
@@ -244,7 +245,7 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba( 255,255,255, 0.1 );
+  background-color: rgba( 0,0,0,0.1 );
   transition: 0.2s;
   cursor: pointer;
   border-radius: 5%;
@@ -293,7 +294,6 @@ font-size: 1.8em;
 }
 
 .row .nav {
-  background-color: red;
 }
 
 .ipad-model-select {
@@ -313,7 +313,7 @@ font-size: 1.8em;
   /*margin: 0.5em;*/
   margin: 0.5vw;
   padding: 0.5vw;
-  background-color: rgba( 255,255,255, 0.1 );
+  background-color: rgba( 0,0,0,0.1 );
   border-radius: 5%;
   cursor: hand;
   border: 5px solid rgba(0,0,0,0);
@@ -338,4 +338,100 @@ font-size: 1.8em;
   margin: 0;
   font-size: 1.5vw;
   text-align: center;
+}
+
+.repair-select {
+  padding-left: 4em;
+  padding-right: 4em;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  display: none;
+}
+
+.repair-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin: 1vw;
+  border-radius: 5%;
+  background-color: rgba( 255,255,255,0.1 );
+  width: 12vw;
+  border: 5px solid rgba( 68, 132, 200, 0.0 );
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.secondary {
+  display: none;
+}
+
+.repair-item:hover {
+  border: 5px solid rgba( 68, 132, 200, 0.5 );
+}
+
+.repair-item:active {
+  border: 5px solid rgba( 68, 132, 200, 0.9 );
+}
+
+.show-more {
+  border: 5px solid seagreen;
+}
+
+.hide-more {
+  border: 5px solid coral;
+}
+
+.hide-more:hover {
+  border: 5px solid coral !important;
+}
+
+.show-more:hover {
+  border: 5px solid seagreen;
+}
+
+.repair-item h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.repair-select h1 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.ui-finish {
+  margin-left: auto;
+}
+
+.finish-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.repair-select .equal-width {
+  display: flex;
+  align-items: center;
+}
+
+.repair-select .ui-back {
+  margin-left: 1vw;
+}
+
+.finish {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-right: 1vw;
+  background-color: #4484C8;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.repair-item-selected {
+  border: 5px solid rgba( 68, 132, 200, 0.9 ) !important;
 }
