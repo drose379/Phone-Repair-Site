@@ -160,6 +160,8 @@ $(function() {
 
     uiState[MODEL_TYPE_KEY] = model;
 
+    $('#repair-title').html("WHAT DO YOU NEED FOR YOUR " + "<span class='accent'>" + $(this).data()['name'] + "</span>");
+
 
     // Need to de-select any other models, try to use from uiState[MODEL_TYPE] to grab by data attr
 
