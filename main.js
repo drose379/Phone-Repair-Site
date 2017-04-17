@@ -235,6 +235,11 @@ $(function() {
   });
 
 
+  $('.more').click( function() {
+    $('.more-repairs').animate( {opacity: 1} );
+    $('.more').animate({opacity: 0});
+  });
+
 // End document.ready
 });
 
