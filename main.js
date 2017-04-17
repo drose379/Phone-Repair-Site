@@ -1,6 +1,6 @@
 $(document).ready( function() {
   $('.home-content').css( 'padding-top', $('.nav').height() / 3 ); // Need to add the 2 em of the navs margin to this number
-  $('.pricing-ui').css( 'padding-top', $('.nav').height() / 2 );
+  //$('.pricing-ui').css( 'padding-top', $('.nav').height() / 2 );
 
 
 $(function() {
@@ -60,8 +60,7 @@ $(function() {
   var VIEW_DEVICE_TYPE_SELECT         = 0;
   var VIEW_DEVICE_MODEL_SELECT_IPHONE = 1;
   var VIEW_DEVICE_MODEL_SELECT_IPAD   = 2;
-  var VIEW_DEVICE_REPAIR_SELECT       = 3;
-  var VIEW_QUOTE_PRICE                = 4;
+  var VIEW_QUOTE_PRICE                = 3;
 
   var currentView = VIEW_DEVICE_TYPE_SELECT;
 
@@ -134,8 +133,8 @@ $(function() {
         fadeOutUiNav();
         currentView = VIEW_DEVICE_TYPE_SELECT;
         break;
-      case VIEW_DEVICE_REPAIR_SELECT:
-        $('.repair-select').fadeOut('fast');
+      case VIEW_QUOTE_PRICE:
+        $('.quote-section').fadeOut('fast');
 
         setTimeout( function() {
           if( uiState[DEVICE_TYPE_KEY] == 'iphone' ) {
@@ -168,18 +167,19 @@ $(function() {
 
     $(this).css( 'background-color', 'rgba(68,132,200,0.5)' );
 
+
     setTimeout(function() {
       if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
         $('.iphone-model-select').fadeOut( 'fast' );
       else
         $('.ipad-model-select').fadeOut( 'fast' );
 
-      currentView = VIEW_DEVICE_REPAIR_SELECT;
+      currentView = VIEW_QUOTE_PRICE;
     },300);
 
 
     setTimeout( function(){
-      $('.repair-select').fadeIn();
+      $('.quote-section').fadeIn().css( 'display', 'flex' );
     }, 500 );
 
 
