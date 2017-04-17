@@ -371,11 +371,12 @@ font-size: 1.8em;
 }
 
 .repair-item::before {
-  content: 'Hi this is the tooltip description and it goes here lol';
+  content: 'This is the tooltip';
   font-size: 1.2vw;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   top: -135%;
   width: 100%;
   background-color: #9E9E9E;
@@ -384,8 +385,7 @@ font-size: 1.8em;
   left: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
-  display: block;
+  transition: all 0.0s;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
   box-sizing: border-box;
@@ -402,9 +402,8 @@ font-size: 1.8em;
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.0s;
 }
-
 
 .repair-item:hover::after {
   visibility: visible;
