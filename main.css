@@ -225,6 +225,8 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  display: none;
 }
 
 .device-type {
@@ -347,10 +349,10 @@ font-size: 1.8em;
   align-items: center;
   color: white;
 
-  display: none;
 }
 
 .repair-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,6 +367,55 @@ font-size: 1.8em;
   border: 5px solid rgba( 68, 132, 200, 0.0 );
   transition: 0.2s;
   cursor: pointer;
+
+}
+
+.repair-item::before {
+  content: 'Hi this is the tooltip description and it goes here lol';
+  font-size: 1.2vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -135%;
+  width: 100%;
+  background-color: #9E9E9E;
+  color: black;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  display: block;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  box-sizing: border-box;
+}
+
+.repair-item::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #9E9E9E;
+  left: calc( 6vw );
+  top: -25%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+
+.repair-item:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: -30%;
+}
+
+.repair-item:hover::before {
+  opacity: 1;
+  top: -130%;
+  visibility: visible;
 }
 
 .secondary {
