@@ -398,6 +398,9 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   margin-left: 1em;
+  height: 20vw;
+
+  background-color: green;
 }
 
 
@@ -413,15 +416,26 @@ font-size: 1.8em;
   margin-bottom: 1.5em;
 }
 
+.quote-info .repair-item:nth-child(1) .repair-price {
+  margin-left: 1em;
+}
+
 .quote-info .repair-item {
-  width: 140%;
+  /*width: 140%; */
   margin-bottom: 1em;
+  display: flex;
 }
 
 .quote-info .repair-title {
-  width: 100%;
+  /*width: 100%;*/
+  background-color: blue;
+  flex-grow: 1;
 }
 
+
 .quote-info .repair-price {
-  width: 40%;
+  /*flex-grow: 1;*/
+  background-color: red;
+  display: flex;
+  justify-content: flex-end;
 }
