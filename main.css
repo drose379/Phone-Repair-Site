@@ -415,6 +415,19 @@ font-size: 1.8em;
 
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #868686;
+  cursor: pointer;
+}
+
 .quote-info .repair-item:nth-child(1) .repair-price {
   margin-left: 1em;
 }
