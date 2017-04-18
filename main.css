@@ -391,6 +391,7 @@ font-size: 1.8em;
 
 .quote-info .device-image {
   height: 20vw;
+  max-height: 20vw;
   margin-right: 2em;
 }
 
@@ -411,7 +412,7 @@ font-size: 1.8em;
 }
 
 .quote-info .repair-item:nth-child(1) {
-  margin-bottom: 1.5em;
+
 }
 
 .quote-info .repair-item:nth-child(1) .repair-price {
@@ -422,6 +423,7 @@ font-size: 1.8em;
   /*width: 140%; */
   margin-bottom: 1em;
   display: flex;
+  flex-shrink: 0;
 }
 
 .quote-info .repair-title {
@@ -433,4 +435,9 @@ font-size: 1.8em;
   display: flex;
   justify-content: flex-start;
   width: 10%;
+}
+
+.scroll-container {
+  width: 102.5%;
+  overflow-y: scroll;
 }
