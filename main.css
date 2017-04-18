@@ -3,7 +3,8 @@
 body {
   margin: 0;
   background: url('res/bg-2.jpeg') no-repeat center center fixed;
-  font-family: 'Oswald', sans-serif
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 body::before {
@@ -224,6 +225,8 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  display: none;
 }
 
 .device-type {
@@ -347,7 +350,6 @@ font-size: 1.8em;
   box-sizing: border-box;
   width: 100%;
   color: white;
-  display: none;
 }
 
 .main, .desc {
@@ -360,22 +362,46 @@ font-size: 1.8em;
   flex-direction: column;
 }
 
+.quote-section .ui-nav {
+  display: flex;
+  align-items: center;
+}
+
 .main h1 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin: 0;
 }
 
 .full {
   width: 100%;
+  padding-left: 0.5em;
 }
 
 .desc h1 {
-  margin-bottom: 0;
+  font-size: 2.5vw;
+  margin: 0;
 }
 
 .desc {
   flex-direction: column;
   align-items: center;
+}
+
+.desc ul {
+  margin: 0;
+  margin-left: 1em;
+}
+
+.desc li {
+  margin-bottom: 0.5em;
+  font-size: 1.3vw;
+}
+
+.desc li:nth-child(1) {
+  margin-top: 0.5em;
+}
+
+.desc .content-wrap {
 }
 
 .desc p {
@@ -429,28 +455,16 @@ font-size: 1.8em;
   max-width: 100%;
 }
 
-.more-repairs {
-  width: 100%;
+.show-more-button {
   display: flex;
   justify-content: center;
-  margin-top: 1vw;
-  opacity: 0;
 }
 
-.more-repair-item {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: rgba( 255,255,255, 0.1 );
-  border-radius: 5%;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 10%;
-}
-
-.more-repair-item h3 {
+.show-more-button h3 {
+  background-color: #4484C8;
+  display: inline;
   margin: 0;
+  padding: 0.7em;
+  cursor: pointer;
+  border-radius: 5%;
 }
