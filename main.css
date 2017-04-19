@@ -46,7 +46,6 @@ body::before {
   padding-left: 4em;
   padding-right: 4em;
   box-sizing: border-box;
-  /** Need to give this a height!! */
 }
 
 .nav h1 {
@@ -193,6 +192,7 @@ font-size: 1.8em;
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: green;
 }
 
 .ui {
@@ -201,7 +201,7 @@ font-size: 1.8em;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  background-color: red;
 }
 
 .ui-nav {
@@ -228,6 +228,8 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: blue;
 }
 
 .device-type {
@@ -264,6 +266,9 @@ font-size: 1.8em;
 .device-type-select h1 {
   color: #ecf0f1;
   font-size: 2vw;
+
+  background-color: red;
+  margin-top: 0;
 }
 
 .device-type h3 {
@@ -294,6 +299,8 @@ font-size: 1.8em;
 
 .iphone-model-select h1 {
     font-size: 2vw;
+    background-color: blue;
+    margin-top: 0;
 }
 
 .row .nav {
@@ -309,6 +316,7 @@ font-size: 1.8em;
 .ipad-model-select h1 {
   text-align: center;
   font-size: 2vw;
+  margin-top: 0;
 }
 
 .model {
@@ -367,6 +375,7 @@ font-size: 1.8em;
   font-size: 2vw;
   color: #868686;
   margin-left: 2vw;
+  margin-top: 0;
 }
 
 .quote-top-info img {
