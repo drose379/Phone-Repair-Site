@@ -3,7 +3,7 @@ $(document).ready( function() {
   var nav = $('.nav').outerHeight(true);
 
   $('.home-content').css( 'padding-top', nav / 3 );
-  $('.ui').css( 'margin-top', nav + (nav / 3) );
+  $('.ui').css( 'margin-top', nav );
 
 $(function() {
   $.scrollify({
