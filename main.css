@@ -228,8 +228,6 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  display: none;
 }
 
 .device-type {
@@ -353,6 +351,8 @@ font-size: 1.8em;
   box-sizing: border-box;
   width: 100%;
   color: white;
+
+  display: none;
 }
 
 
