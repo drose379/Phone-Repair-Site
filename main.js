@@ -119,6 +119,7 @@ $(function() {
     }, 500 );
 
   });
+
   $('.ui-back').click( function() {
 
     switch( currentView ) {
@@ -232,7 +233,6 @@ $(function() {
       isAllShowing = true;
     }
   });
-
 
   $('.scroll-container').hover( function() {
     $.scrollify.disable();

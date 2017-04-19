@@ -46,6 +46,10 @@ body::before {
   padding-left: 4em;
   padding-right: 4em;
   box-sizing: border-box;
+  /** Need to give this a height!! */
+  max-height: 13em;
+
+  background-color: green;
 }
 
 .nav h1 {
@@ -189,11 +193,10 @@ font-size: 1.8em;
 
 
 .pricing-ui {
-  height: 100vh;
+  height: 100%;
   display: flex;
-  padding-top: 3vh;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 13em;
 }
 
 .ui {
@@ -202,6 +205,8 @@ font-size: 1.8em;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  background-color: red;
 }
 
 .ui-nav {
@@ -351,7 +356,6 @@ font-size: 1.8em;
   box-sizing: border-box;
   width: 100%;
   color: white;
-
   display: none;
 }
 
@@ -362,7 +366,6 @@ font-size: 1.8em;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 3em;
 }
 
 .quote-top-info h2 {
