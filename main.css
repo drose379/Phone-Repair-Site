@@ -363,7 +363,7 @@ font-size: 1.8em;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 
 .quote-top-info h2 {
@@ -372,7 +372,6 @@ font-size: 1.8em;
   margin-left: 0.2em;
   margin-top: 0;
   margin-bottom: 0;
-  background-color: red;
 }
 
 .quote-top-info img {
@@ -381,7 +380,6 @@ font-size: 1.8em;
   border-radius: 5%;
   height: 4vh;
   cursor: pointer;
-  background-color: blue;
 }
 
 .quote-top-info img:hover {
