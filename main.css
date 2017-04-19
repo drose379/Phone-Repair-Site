@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
   margin: 0;
   background: url('res/bg-2.jpeg') no-repeat center center fixed;
   font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.05em;
+
 }
 
 body::before {
@@ -148,6 +149,8 @@ font-size: 1.8em;
 
 .info-container p {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
 }
 
 .info-container h3 {
@@ -359,6 +362,7 @@ font-size: 1.8em;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3em;
 }
 
 .quote-top-info h2 {
@@ -400,6 +404,7 @@ font-size: 1.8em;
   flex-direction: column;
   margin-left: 1em;
   height: 20vw;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -411,8 +416,13 @@ font-size: 1.8em;
   font-size: 3vw;
 }
 
-.quote-info .repair-item:nth-child(1) {
+.hoverable-repair {
+  padding-right: 1em;
+}
 
+.hoverable-repair:hover {
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
