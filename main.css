@@ -392,7 +392,7 @@ font-size: 1.8em;
 .quote-info .device-image {
   height: 20vw;
   max-height: 20vw;
-  margin-right: 2em;
+  margin-right: 4em;
 }
 
 .quote-info .prices {
@@ -416,7 +416,7 @@ font-size: 1.8em;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
