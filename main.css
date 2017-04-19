@@ -192,7 +192,6 @@ font-size: 1.8em;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: green;
 }
 
 .ui {
@@ -201,7 +200,6 @@ font-size: 1.8em;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: red;
 }
 
 .ui-nav {
@@ -228,8 +226,6 @@ font-size: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: blue;
 }
 
 .device-type {
@@ -266,8 +262,6 @@ font-size: 1.8em;
 .device-type-select h1 {
   color: #ecf0f1;
   font-size: 2vw;
-
-  background-color: red;
   margin-top: 0;
 }
 
@@ -299,7 +293,6 @@ font-size: 1.8em;
 
 .iphone-model-select h1 {
     font-size: 2vw;
-    background-color: blue;
     margin-top: 0;
 }
 
@@ -369,6 +362,7 @@ font-size: 1.8em;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .quote-top-info h2 {
@@ -376,6 +370,7 @@ font-size: 1.8em;
   color: #868686;
   margin-left: 2vw;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .quote-top-info img {

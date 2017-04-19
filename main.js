@@ -1,6 +1,9 @@
 $(document).ready( function() {
-  $('.home-content').css( 'padding-top', $('.nav').height() / 3 ); // Need to add the 2 em of the navs margin to this number
-  $('.ui').css( 'margin-top', $('.nav').outerHeight());
+
+  var nav = $('.nav').outerHeight(true);
+
+  $('.home-content').css( 'padding-top', nav / 3 );
+  $('.ui').css( 'margin-top', nav + (nav / 3) );
 
 $(function() {
   $.scrollify({
