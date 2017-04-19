@@ -47,9 +47,7 @@ body::before {
   padding-right: 4em;
   box-sizing: border-box;
   /** Need to give this a height!! */
-  max-height: 13em;
-
-  background-color: green;
+  max-height: 30%;
 }
 
 .nav h1 {
@@ -196,7 +194,7 @@ font-size: 1.8em;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 13em;
+
 }
 
 .ui {
@@ -205,7 +203,8 @@ font-size: 1.8em;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+  position: absolute;
+  top: 130%;
   background-color: red;
 }
 
