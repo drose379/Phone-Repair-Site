@@ -359,6 +359,8 @@ font-size: 1.8em;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 5em;
+
 }
 
 .quote-top-info h2 {
@@ -442,7 +444,6 @@ font-size: 1.8em;
 .quote-info .repair-title {
   flex-grow: 1;
 }
-
 
 .quote-info .repair-price {
   display: flex;

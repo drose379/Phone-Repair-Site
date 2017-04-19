@@ -234,7 +234,7 @@ $(function() {
   });
 
 
-  $('.prices').hover( function() {
+  $('.scroll-container').hover( function() {
     $.scrollify.disable();
   }, function() {
     $.scrollify.enable();
