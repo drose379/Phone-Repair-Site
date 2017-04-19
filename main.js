@@ -2,7 +2,6 @@ $(document).ready( function() {
   $('.home-content').css( 'padding-top', $('.nav').height() / 3 ); // Need to add the 2 em of the navs margin to this number
   //$('.pricing-ui').css( 'padding-top', $('.nav').height() / 2 );
 
-
 $(function() {
   $.scrollify({
     section: '.section',
@@ -235,10 +234,12 @@ $(function() {
   });
 
 
-  $('.more').click( function() {
-    $('.more-repairs').animate( {opacity: 1} );
-    $('.more').animate({opacity: 0});
-  });
+  $('.prices').hover( function() {
+    $.scrollify.disable();
+  }, function() {
+    $.scrollify.enable();
+  } );
+
 
 // End document.ready
 });
