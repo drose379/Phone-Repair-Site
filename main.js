@@ -140,6 +140,7 @@ $(function() {
       case VIEW_QUOTE_PRICE:
         $('.quote-section').fadeOut('fast');
 
+
         setTimeout( function() {
           if( uiState[DEVICE_TYPE_KEY] == 'iphone' ) {
             $('.iphone-model-select').fadeIn();
@@ -157,6 +158,7 @@ $(function() {
 
   $('.model').click( function() {
     var model = $(this).data()['model'];
+    // get name from here
 
     $('.iphone-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)');
     $('.ipad-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)'); // not working need  to set data refs on ipas
