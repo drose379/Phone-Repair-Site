@@ -2,7 +2,7 @@
   "iphone7-plus": {
     "name": "iPHONE 7 PLUS",
     "repairs": {
-      "screen": {"name": "SCREEN REPLACEMENT","price": "$120"},
+      "screen": {"name": "Screen Replacement","price": "$120"},
       "batt": {"name": "Battery Replacement","price": "$30"},
       "charging-port": {"name": "Charging Port","price": "$120"},
       "touch-ic":{"name": "Broken touch screen","price": "$120"},
@@ -18,7 +18,7 @@
   "iphone7" : {
     "name": "iPHONE 7",
     "repairs": {
-      "screen": {"name": "SCREEN REPLACEMENT","price": "$100"},
+      "screen": {"name": "Screen Replacement","price": "$100"},
       "batt": {"name": "Battery Replacement","price": "$30"},
       "charging-port": {"name": "Charging Port","price": "$30"},
       "touch-ic":{"name": "Broken Touchscreen (Touch Disease)","price": "$120"},
