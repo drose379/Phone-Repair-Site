@@ -1,5 +1,6 @@
 {
   "iphone7-plus": {
+    "name": "iPHONE 7 PLUS",
     "repairs": {
       "screen": {"name": "SCREEN REPLACEMENT","price": "$120"},
       "batt": {"name": "Battery Replacement","price": "$30"},
@@ -15,6 +16,7 @@
     }
   },
   "iphone7" : {
+    "name": "iPHONE 7",
     "repairs": {
       "screen": {"name": "SCREEN REPLACEMENT","price": "$100"},
       "batt": {"name": "Battery Replacement","price": "$30"},
@@ -30,33 +32,43 @@
     }
   },
   "iphoneSE" : {
+    "name": "iPHONE SE",
     "repairs": []
   },
   "iphone6s-plus" : {
+    "name": "iPHONE 6S PLUS",
     "repairs": []
   },
   "iphone6s" : {
+    "name": "iPHONE 6S",
     "repairs": []
   },
   "iphone6-plus" : {
+    "name": "iPHONE 6 PLUS",
     "repairs": []
   },
   "iphone6" : {
+    "name": "iPHONE 6",
     "repairs": []
   },
   "iphone5c" : {
+    "name": "iPHONE 5C",
     "repairs": []
   },
   "iphone5s" : {
+    "name": "iPHONE 5S",
     "repairs": []
   },
   "iphone5" : {
+    "name": "iPHONE 5",
     "repairs": []
   },
   "iphone4s" : {
+    "name": "iPHONE 4S",
     "repairs": []
   },
   "iphone4" : {
+    "name": "iPHONE 4",
     "repairs": []
   },
 }

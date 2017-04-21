@@ -4,6 +4,7 @@ $(document).ready( function() {
 
   $('.home-content').css( 'padding-top', nav / 3 );
   $('.ui').css( 'padding-top', (nav / 2) );
+  $('.contact').css( 'padding-top', nav );
 
 
 $(function() {
@@ -165,15 +166,9 @@ $(function() {
 
     uiState[MODEL_TYPE_KEY] = model;
 
-    $('#repair-title').html("WHAT DO YOU NEED FOR YOUR " + "<span class='accent'>" + $(this).data()['name'] + "</span>");
-
-
-    // Need to de-select any other models, try to use from uiState[MODEL_TYPE] to grab by data attr
-
-
     $(this).css( 'background-color', 'rgba(68,132,200,0.5)' );
 
-
+    /*
     setTimeout(function() {
       if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
         $('.iphone-model-select').fadeOut( 'fast' );
@@ -187,8 +182,11 @@ $(function() {
     setTimeout( function(){
       $('.quote-section').fadeIn().css( 'display', 'flex' );
     }, 500 );
+    */
 
-
+    $.getJSON('get-device-info.php',function(deviceMap) {
+      console.log( deviceMap );
+    });
 
 
   } );

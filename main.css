@@ -500,3 +500,10 @@ font-size: 1.8em;
   width: 102.5%;
   overflow-y: scroll;
 }
+
+.contact {
+  height: 100%;
+  padding-left: 4em;
+  padding-right: 4em;
+  background-color: red;
+}
