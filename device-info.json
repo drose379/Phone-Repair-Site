@@ -21,7 +21,7 @@
       "screen": {"name": "Screen Replacement","price": "$100"},
       "batt": {"name": "Battery Replacement","price": "$30"},
       "charging-port": {"name": "Charging Port","price": "$30"},
-      "touch-ic":{"name": "Broken Touchscreen (Touch Disease)","price": "$120"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
       "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
       "housing": {"name": "Housing", "price": "$70"},
       "front-cam": {"name": "Front Camera", "price": "$40"},
