@@ -183,7 +183,8 @@ $(function() {
             '<div class="row repair-item hoverable-repair"><h2 class="repair-title">'+repairTitle+'</h2><h2 class="repair-price accent">'+repairPrice+'</h2></div>'
           );
         });
-        
+
+
         setTimeout(function() {
           if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
             $('.iphone-model-select').fadeOut( 'fast' );
@@ -193,21 +194,12 @@ $(function() {
           currentView = VIEW_QUOTE_PRICE;
         },300);
 
+        setTimeout( function(){
+          $('.quote-section').fadeIn().css( 'display', 'flex' );
+        }, 500 );
+
       }
     );
-
-
-
-
-    setTimeout( function(){
-      $('.quote-section').fadeIn().css( 'display', 'flex' );
-    }, 500 );
-
-
-
-
-
-
 
   } );
 
