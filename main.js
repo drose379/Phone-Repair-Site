@@ -184,9 +184,17 @@ $(function() {
     }, 500 );
     */
 
-    $.getJSON('get-device-info.php',function(deviceMap) {
-      console.log( deviceMap );
+    $.ajax({
+      dataType: 'json',
+      url: 'http://dylanrose.me/Phone-Repair-Site/get-device-info.php',
+      success: function( deviceMap ) {
+        console.log(deviceMap);
+      },
+      error: function(err) {
+        console.log( err );
+      }
     });
+
 
 
   } );
