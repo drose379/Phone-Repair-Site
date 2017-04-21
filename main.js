@@ -187,7 +187,7 @@ $(function() {
     $.getJSON(
       'http://dylanrose.me/Phone-Repair-Site/get-device-info.php',
       function( deviceMap ) {
-        console.log( deviceMap['iphone7-plus'] );
+        JSON.parse( deviceMap );
       }
     );
 
