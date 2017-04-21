@@ -33,42 +33,162 @@
   },
   "iphoneSE" : {
     "name": "iPHONE SE",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone6s-plus" : {
     "name": "iPHONE 6S PLUS",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone6s" : {
     "name": "iPHONE 6S",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone6-plus" : {
     "name": "iPHONE 6 PLUS",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone6" : {
     "name": "iPHONE 6",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone5c" : {
     "name": "iPHONE 5C",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone5s" : {
     "name": "iPHONE 5S",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone5" : {
     "name": "iPHONE 5",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone4s" : {
     "name": "iPHONE 4S",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   },
   "iphone4" : {
     "name": "iPHONE 4",
-    "repairs": []
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
   }
 }

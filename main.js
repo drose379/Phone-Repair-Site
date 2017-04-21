@@ -172,6 +172,7 @@ $(function() {
     $.getJSON(
       'http://dylanrose.me/Phone-Repair-Site/get-device-info.php',
       function( deviceMap ) {
+        $('.scroll-container').empty();
         let deviceInfo = JSON.parse( deviceMap )[model];
         let deviceName = deviceInfo.name;
         $('#device-name').text( deviceName );
@@ -181,18 +182,21 @@ $(function() {
           $('.scroll-container').append(
             '<div class="row repair-item hoverable-repair"><h2 class="repair-title">'+repairTitle+'</h2><h2 class="repair-price accent">'+repairPrice+'</h2></div>'
           );
-        } );
+        });
+        
+        setTimeout(function() {
+          if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
+            $('.iphone-model-select').fadeOut( 'fast' );
+          else
+            $('.ipad-model-select').fadeOut( 'fast' );
+
+          currentView = VIEW_QUOTE_PRICE;
+        },300);
+
       }
     );
 
-    setTimeout(function() {
-      if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
-        $('.iphone-model-select').fadeOut( 'fast' );
-      else
-        $('.ipad-model-select').fadeOut( 'fast' );
 
-      currentView = VIEW_QUOTE_PRICE;
-    },300);
 
 
     setTimeout( function(){
