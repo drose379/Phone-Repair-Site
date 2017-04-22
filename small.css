@@ -1,10 +1,31 @@
 .nav {
-  padding: 2em !important;
+  padding-top: 1em !important;
+  padding-left: 3em;
+  padding-right: 3em;
+  flex-direction: column !important;
+}
+
+.nav .nav-left {
+   justify-content: center !important;
+   align-items: center !important;
+   text-align: center;
+   border-bottom: 0;
+ }
+
+
+ .nav .nav-right {
+   justify-content: center;
+ }
+
+.nav .nav-right .nav-item {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 0;
 }
 
 .nav .equal-width {
-  flex-grow: 1;
-  flex-basis: 0;
+  flex-grow: 0 !important;
+  flex-basis: auto !important;
 }
 
 .nav h1 {
@@ -15,7 +36,7 @@
 }
 
 .nav h4 {
-  font-size: 2em;
+  font-size: 2.5vh;
 }
 
 #fullPage .equal-width {
