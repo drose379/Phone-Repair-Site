@@ -2,8 +2,8 @@ $(document).ready( function() {
 
   var nav = $('.nav').outerHeight(true);
 
-  if( $(window).width() > 1000 )
-    $('.home-content').css( 'padding-top', nav / 3 );
+  //if( $(window).width() > 1000 )
+    $('.home-content').css( 'padding-top', nav );
 
   $('.ui').css( 'padding-top', (nav / 2) );
   $('.contact').css( 'padding-top', nav );
