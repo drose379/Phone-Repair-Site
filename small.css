@@ -112,3 +112,23 @@
 .device-type img {
   height: 30vw !important;
 }
+
+.iphone-select-top img {
+  height: 6vw;
+}
+
+.iphone-select-top h1 {
+  font-size: 4vw;
+}
+
+.iphone-model-select .row {
+  flex-wrap: wrap;
+}
+
+.model {
+  width: 20vw;
+}
+
+.model h3 {
+  font-size: 3vw;
+}
