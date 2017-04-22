@@ -57,14 +57,15 @@
 }
 
 .home-left {
-  width: 90%;
+  width: 100%;
+  background-color: red;
 }
 
 .home-left h2 {
   /*
   font-size: 4em !important;
   */
-  font-size: 5vh;
+  font-size: 4vh;
   width: 100%;
 }
 
