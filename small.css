@@ -92,3 +92,11 @@
   width: 2.5em;
   height: 2.5em;
 }
+
+.device-type-select {
+  background-color: red;
+}
+
+.device-type-select .row {
+  flex-direction: column !important;
+}
