@@ -127,8 +127,9 @@
 
 .model {
   width: 20vw;
+  margin: 1em;
 }
 
 .model h3 {
-  font-size: 3vw;
+  font-size: 3.2vw;
 }
