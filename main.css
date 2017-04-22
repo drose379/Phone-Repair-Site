@@ -116,13 +116,9 @@ body::before {
 }
 
 .home-left h2 {
-  /*font-size: 3vw;*/
-
-  font-size: 3em;
+  font-size: 3vw;
   color: #ecf0f1;
   text-align: center;
-
-  background-color: blue;
 }
 
 .home-right {
@@ -142,27 +138,19 @@ body::before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 1.8em;
 /*
 font-size: 1.8em;
-
+*/
   font-size: 1.5vw;
-  */
   margin-top: 1vh;
   margin-bottom: 1vh;
   color: #ecf0f1;
-
-  background-color: red;
 }
 
 .info-container p {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  /*font-size: 1.2vw;*/
-
-  font-size: 0.8em;
-
-  background-color: blue;
+  font-size: 1.2vw;
 }
 
 .info-container h3 {

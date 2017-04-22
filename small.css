@@ -1,5 +1,6 @@
-body {
-  background: red !important;
+.equal-width {
+  flex-grow: 0 !important;
+  flex-basis: auto !important;
 }
 
 .home-row {
@@ -7,10 +8,14 @@ body {
   flex-direction: column;
 }
 
-.home-left {
-  display: none !important;
+.home-content {
+  margin: 0 !important;
+}
+
+.home-left h2 {
+  font-size: 3em !important;
 }
 
 .home-right {
-   display: none !important;
+  display: none !important;
 }
