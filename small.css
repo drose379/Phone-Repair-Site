@@ -134,3 +134,8 @@
 .model h3 {
   font-size: 3.2vw;
 }
+
+.quote-info .prices {
+  height: auto;
+  max-height: auto;
+}
