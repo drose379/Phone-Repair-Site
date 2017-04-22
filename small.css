@@ -12,6 +12,36 @@
   margin: 0 !important;
 }
 
+.home-left {
+  width: 80%;
+  background-color: orange;
+}
+
 .home-left h2 {
   font-size: 3em !important;
+  background-color: blue;
+  width: 100%;
+}
+
+.home-right {
+  background-color: blue;
+  width: 80%;
+}
+
+.home-right .info-container-master {
+  background-color: yellow;
+  width: 90%;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.home-right .info-container {
+  font-size: 2em;
+  background: red;
+  width: 100% !important;
+  margin: 0;
+}
+
+.home-right .info-container p {
+  font-size: 0.5em;
 }
