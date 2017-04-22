@@ -100,3 +100,7 @@
 .device-type-select .row {
   flex-direction: column !important;
 }
+
+.device-type-select h1 {
+  font-size: 4vw;
+}
