@@ -18,7 +18,7 @@
 }
 
 .home-left h2 {
-  font-size: 5em !important;
+  font-size: 4em !important;
   background-color: blue;
   width: 100%;
 }
@@ -43,5 +43,5 @@
 }
 
 .home-right .info-container p {
-  font-size: 0.5em;
+  font-size: 1em;
 }
