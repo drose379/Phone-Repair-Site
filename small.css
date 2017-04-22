@@ -1,10 +1,33 @@
-.equal-width {
+.nav {
+  padding: 2em !important;
+}
+
+.nav .equal-width {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.nav h1 {
+  /*
+  font-size: 2.3em;
+  */
+  font-size: 4vh;
+}
+
+.nav h4 {
+  font-size: 2em;
+}
+
+#fullPage .equal-width {
   flex-grow: 0 !important;
   flex-basis: auto !important;
 }
 
+.arrow-down {
+  width: 3em !important;
+}
+
 .home-row {
-  background-color: green;
   flex-direction: column;
 }
 
@@ -13,35 +36,40 @@
 }
 
 .home-left {
-  width: 80%;
-  background-color: orange;
+  width: 90%;
 }
 
 .home-left h2 {
+  /*
   font-size: 4em !important;
-  background-color: blue;
+  */
+  font-size: 5vh;
   width: 100%;
 }
 
 .home-right {
-  background-color: blue;
-  width: 80%;
+  width: 90%;
 }
 
 .home-right .info-container-master {
-  background-color: yellow;
-  width: 90%;
+  width: 100%;
   margin-left: 4em;
   margin-right: 4em;
 }
 
 .home-right .info-container {
+  /*
   font-size: 2em;
-  background: red;
+  */
+  font-size: 2.5vh;
   width: 100% !important;
-  margin: 0;
 }
 
 .home-right .info-container p {
   font-size: 1em;
+}
+
+.info-icon {
+  width: 2.5em;
+  height: 2.5em;
 }
