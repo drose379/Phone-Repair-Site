@@ -94,7 +94,11 @@
 }
 
 .device-type-select {
-  
+
+}
+
+.device-type {
+  width: 30vw;
 }
 
 .device-type-select .row {
