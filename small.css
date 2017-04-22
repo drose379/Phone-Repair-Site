@@ -139,3 +139,10 @@
   height: auto;
   max-height: auto;
 }
+
+
+.quote-info-container img {
+  height: 6vw;
+  background-color: red;
+  display: none;
+}
