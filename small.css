@@ -98,9 +98,13 @@
 }
 
 .device-type-select .row {
-  flex-direction: column !important;
+  /*flex-direction: column !important;*/
 }
 
 .device-type-select h1 {
   font-size: 4vw;
+}
+
+.device-type img {
+  height: 25vw !important;
 }
