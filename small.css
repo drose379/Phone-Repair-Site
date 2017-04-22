@@ -58,7 +58,6 @@
 
 .home-left {
   width: 100%;
-  background-color: red;
 }
 
 .home-left h2 {
@@ -85,8 +84,6 @@
   */
   font-size: 2vh;
   width: 100% !important;
-
-  background-color: green;
 }
 
 .home-right .info-container p {
