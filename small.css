@@ -1,0 +1,16 @@
+body {
+  background: red !important;
+}
+
+.home-row {
+  background-color: green;
+  flex-direction: column;
+}
+
+.home-left {
+  display: none !important;
+}
+
+.home-right {
+   display: none !important;
+}

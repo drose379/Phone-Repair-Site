@@ -6,12 +6,14 @@ $(document).ready( function() {
   $('.ui').css( 'padding-top', (nav / 2) );
   $('.contact').css( 'padding-top', nav );
 
+  window.location.hash = 'home';
 
 $(function() {
   $.scrollify({
     section: '.section',
     scrollbars: false,
     scrollSpeed: 1500,
+    updateHash: false,
     before: function( toSection ) {
 
       // currentSection = 1 means heading to the below section
@@ -19,12 +21,16 @@ $(function() {
 
       if( toSection == 1 ) {
 
+        window.location.hash = 'pricing';
+
         $('.home-content').animate({opacity: 0}, 70);
 
         $('#home').animate( {color: '#ecf0f1'}, 300 );
         $('#pricing').animate({color: '#4484C8'}, 300 );
 
       } else if( toSection == 0 ) {
+
+        window.location.hash = 'home';
 
         setTimeout( function() {
           $('.home-content').animate({opacity: 1}, 500);
@@ -91,6 +97,8 @@ $(function() {
 
   iphone.click( function() {
     uiState[DEVICE_TYPE_KEY] = 'iphone';
+
+    // update hash pricing/iphone
 
     currentView = VIEW_DEVICE_MODEL_SELECT_IPHONE;
 
@@ -168,7 +176,10 @@ $(function() {
 
     $(this).css( 'background-color', 'rgba(68,132,200,0.5)' );
 
-
+    /**
+     * THIS IS AN ASYNC REQUEST
+     * INSTEAD OF MAKING REQUEST WHEN ITEM IS CLICKED, MAKE REQUEST ON PAGE LOAD AND STORE IT IN VARIABLE, THEN WHEN MODEL CLICK, POPULATE
+    */
     $.getJSON(
       'http://dylanrose.me/Phone-Repair-Site/get-device-info.php',
       function( deviceMap ) {
@@ -259,6 +270,16 @@ $(function() {
 
 // End document.ready
 });
+
+
+window.onhashchange = function() {
+  if( window.location.hash == '#home' ) {
+    //$.scrollify.previous();
+    $.scrollify.previous();
+    console.log( 'home' );
+  }
+};
+
 
 
 function fadeOutUiNav() {

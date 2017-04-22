@@ -116,9 +116,13 @@ body::before {
 }
 
 .home-left h2 {
-  font-size: 3vw;
+  /*font-size: 3vw;*/
+
+  font-size: 3em;
   color: #ecf0f1;
   text-align: center;
+
+  background-color: blue;
 }
 
 .home-right {
@@ -138,19 +142,27 @@ body::before {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 1.8em;
 /*
 font-size: 1.8em;
-*/
+
   font-size: 1.5vw;
+  */
   margin-top: 1vh;
   margin-bottom: 1vh;
   color: #ecf0f1;
+
+  background-color: red;
 }
 
 .info-container p {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2vw;
+  /*font-size: 1.2vw;*/
+
+  font-size: 0.8em;
+
+  background-color: blue;
 }
 
 .info-container h3 {
@@ -398,13 +410,6 @@ font-size: 1.8em;
   margin-bottom: 2em;
 }
 
-.quote-top-info h2 {
-  font-size: 2vw;
-  color: #868686;
-  margin-left: 0.2em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .quote-top-info img {
   max-width: 100%;
@@ -446,6 +451,8 @@ font-size: 1.8em;
 .quote-info-container header h2 {
   margin: 0;
   padding: 0;
+  font-size: 2em;
+  color: #868686;
 }
 
 .quote-info-container header img {
@@ -456,6 +463,11 @@ font-size: 1.8em;
   transition: 0.2s;
   position: absolute;
   left: 0;
+  transition: 0.2s;
+}
+
+.quote-info-container header img:hover {
+  background-color: rgba(255,255,255,0.1);
 }
 
 .quote-info img {
@@ -477,10 +489,15 @@ font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
 }
 
+.quote-info .prices .scroll-container h2 {
+  font-size: 1.2em;
+}
+
 
 .quote-info h1, .quote-info h2 {
   margin: 0;
 }
+
 
 .quote-info h1 {
   font-size: 3vw;
