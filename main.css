@@ -559,18 +559,18 @@ font-size: 1.8em;
 }
 
 .contact label {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .contact form {
   box-sizing: border-box;
-  width: 35%;
+  width: 30%;
 }
 
 .contact input {
   padding: 1em;
   border: 5px solid #868686;
-  font-size: 1.2em;
+  font-size: 1em;
   transition: 0.2s;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
