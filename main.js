@@ -187,12 +187,12 @@ $(function() {
       'http://dylanrose.me/Phone-Repair-Site/get-device-info.php',
       function( deviceMap ) {
         $('.scroll-container').empty();
-        let deviceInfo = JSON.parse( deviceMap )[model];
-        let deviceName = deviceInfo.name;
+        var deviceInfo = JSON.parse( deviceMap )[model];
+        var deviceName = deviceInfo.name;
         $('#device-name').text( deviceName );
         $.each( deviceInfo.repairs, function(index,element) {
-          let repairTitle = deviceInfo.repairs[index].name;
-          let repairPrice = deviceInfo.repairs[index].price;
+          var repairTitle = deviceInfo.repairs[index].name;
+          var repairPrice = deviceInfo.repairs[index].price;
           $('.scroll-container').append(
             '<div class="row repair-item hoverable-repair"><h2 class="repair-title">'+repairTitle+'</h2><h2 class="repair-price accent">'+repairPrice+'</h2></div>'
           );
