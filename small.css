@@ -151,6 +151,10 @@
   display: none;
 }
 
+#device-name {
+  font-size: 6vw;
+}
+
 .quote-info .repair-item {
   font-size: 2.5vw;
 }
