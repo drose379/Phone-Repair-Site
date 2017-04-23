@@ -140,6 +140,9 @@
   max-height: auto;
 }
 
+.quote-info header {
+  align-items: center;
+}
 
 .quote-info-container img {
   max-width: 100%;
