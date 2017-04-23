@@ -143,6 +143,12 @@
 
 .quote-info-container img {
   height: 6vw;
-  background-color: red;
+}
+
+.device-image {
   display: none;
+}
+
+.quote-info .repair-item {
+  font-size: 2.5vw;
 }
