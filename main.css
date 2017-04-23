@@ -567,7 +567,7 @@ font-size: 1.8em;
   width: 30%;
 }
 
-.contact input {
+.contact .input-item input {
   padding: 1em;
   border: 5px solid #868686;
   font-size: 1em;
@@ -618,9 +618,12 @@ font-size: 1.8em;
   justify-content: center;
 }
 
-.contact button {
-  align-self: flex-end;
+.form-bottom {
+  width: 100%;
   margin-top: 1em;
+}
+
+.contact button {
   padding: 1em;
   border: 5px solid #868686;
   cursor: pointer;
@@ -632,4 +635,29 @@ font-size: 1.8em;
   border: 5px solid #4484C8;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.contact #contact-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contact .radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+.contact #button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 0;
+  background-color: blue;
 }
