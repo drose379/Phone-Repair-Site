@@ -568,7 +568,7 @@ font-size: 1.8em;
 }
 
 .contact .input-item input {
-  padding: 1em;
+  padding: 0.2em;
   border: 3px solid #868686;
   font-size: 1em;
   transition: 0.2s;
