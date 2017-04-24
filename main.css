@@ -568,7 +568,7 @@ font-size: 1.8em;
 }
 
 .contact .input-item input {
-  padding: 0.2em;
+  padding: 0.2;
   border: 3px solid #868686;
   font-size: 1em;
   transition: 0.2s;
@@ -588,7 +588,7 @@ font-size: 1.8em;
 
 .contact textarea {
   resize: none;
-  padding: 1em;
+  padding: 0.2em;
   border: 3px solid #868686;
   /*background-color: #ecf0f1;*/
   background-color: rgba(255,255,255,0.2);
@@ -627,12 +627,13 @@ font-size: 1.8em;
   margin-top: 1em;
 }
 
+
 .contact button {
-  padding: 1em;
   border: 3px solid #868686;
   cursor: pointer;
   box-sizing: border-box;
   transition: 0.2s;
+  padding: 1em;
 }
 
 .contact button:hover {
@@ -656,10 +657,15 @@ font-size: 1.8em;
   font-size: 1.5em;
 }
 
+.radio p {
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5em;
+}
+
 .contact #button-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-grow: 0;
-  background-color: blue;
 }
