@@ -568,7 +568,7 @@ font-size: 1.8em;
 }
 
 .contact .input-item input {
-  padding: 0.2;
+  padding: 0.2em;
   border: 3px solid #868686;
   font-size: 1em;
   transition: 0.2s;
@@ -596,10 +596,14 @@ font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   box-sizing: border-box;
+  color: #ecf0f1;
+  transition: 0.2s;
 }
 
 .contact textarea:focus {
   border: 3px solid #4484C8;
+  background-color: #ecf0f1;
+  color: black;
 }
 
 .row .input-item {
@@ -643,7 +647,7 @@ font-size: 1.8em;
 .contact #contact-type {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
 }
