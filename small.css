@@ -172,7 +172,7 @@
 }
 
 .contact header h2 {
-  font-size: 1.2em !important;
+  font-size: 1em !important;
 }
 
 .contact label {
@@ -181,4 +181,8 @@
 
 .contact input {
   font-size: 20px !important;
+}
+
+.contact .radio {
+  font-size: 1em;
 }
