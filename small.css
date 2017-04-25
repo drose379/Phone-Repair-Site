@@ -169,3 +169,7 @@
 .contact header {
   width: 90%;
 }
+
+.contact input {
+  font-size: 16px;
+}
