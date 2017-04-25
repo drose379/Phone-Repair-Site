@@ -167,9 +167,18 @@
 }
 
 .contact header {
+  margin-bottom: 1em !important;
   width: 90%;
 }
 
+.contact header h2 {
+  font-size: 1.2em !important;
+}
+
+.contact label {
+  font-size: 1em;
+}
+
 .contact input {
-  font-size: 16px;
+  font-size: 1.1em !important;
 }
