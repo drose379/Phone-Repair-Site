@@ -28,11 +28,20 @@ $('#fullPage').fullpage({
   normalScrollElements: '.scroll-container',
   onLeave: function( index, nextIndex, direction ) {
 
+    if( index == 1 ) {
+      $('.home-content').fadeOut( 100 );
+    }
+
+    if( nextIndex == 1 ) {
+      $('.home-content').fadeIn();
+    }
+
     // Need to unhighlight the current (index) and highlight the (nextIndex) in the nav bar
     navItems[index-1].css( 'color', '#ecf0f1' );
     navItems[nextIndex-1].css( 'color', '#4484C8' );
 
   }
+
 });
 
 // Handle nav clicks here
@@ -229,6 +238,7 @@ $(function() {
 
   $('.model').click( function() {
     var model = $(this).data()['model'];
+    $('#deviceInput').val( $(this).data()['name'] );
     // get name from here
 
     $('.iphone-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)');
@@ -258,6 +268,13 @@ $(function() {
         });
 
 
+        $('.repair-item').click( function() {
+          console.log( $(this).find('.repair-title').text());
+          $('#repairInput').val( $(this).find( '.repair-title' ).text() );
+          $.fn.fullpage.moveSectionDown();
+        } );
+
+
         setTimeout(function() {
           if( currentView == VIEW_DEVICE_MODEL_SELECT_IPHONE )
             $('.iphone-model-select').fadeOut( 'fast' );
@@ -281,30 +298,10 @@ $(function() {
 
   /** Look into adding tooltip on repair button hovers */
 
-  $('.repair-item').click( function() {
-    var repair = $(this).data()['type'];
-    if( repair != 'more')  {
+  $('.hoverable-repair').click( function() {
+    console.log( 'Repaur click' );
+  } )
 
-      if( $(this).data()['selected'] ) {
-        $(this).data( 'selected', false );
-        $(this).removeClass( 'repair-item-selected' );
-        repairCount--;
-      } else {
-        $(this).data( 'selected', true );
-        $(this).addClass('repair-item-selected');
-        repairCount++;
-      }
-
-      if( repairCount > 0 ) {
-        $('.finish').css( 'opacity', 1 );
-      } else {
-        $('.finish').css( 'opacity', 0.3 );
-      }
-    }
-
-    // NEED TO TAKE CARE OF STORING THE SELECTIONS AND REMOVALS IN uiState obj array
-
-  } );
 
   var isAllShowing = false;
   $('#more').click(function() {
