@@ -191,3 +191,11 @@
 .contact .radio {
   font-size: 1em;
 }
+
+.input-item input {
+  margin-bottom: 0.2em !important;
+}
+
+.radio input {
+  transform: scale(1);
+}
