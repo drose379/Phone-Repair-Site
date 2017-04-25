@@ -1,3 +1,13 @@
+var VIEW_HOME                       = 0;
+var VIEW_DEVICE_TYPE_SELECT         = 1;
+var VIEW_DEVICE_MODEL_SELECT_IPHONE = 2;
+var VIEW_DEVICE_MODEL_SELECT_IPAD   = 3;
+var VIEW_QUOTE_PRICE                = 4;
+var VIEW_CONTACT                    = 5;
+
+var currentView = VIEW_HOME;
+
+
 $(document).ready( function() {
 
   var nav = $('.nav').outerHeight(true);
@@ -11,10 +21,56 @@ $(document).ready( function() {
 
   //window.location.hash = 'home';
 
+  var navItems = [$('#home'), $('#pricing'), $('#contact')];
+
 $('#fullPage').fullpage({
   verticalCentered: false,
-  normalScrollElements: '.scroll-container'
+  normalScrollElements: '.scroll-container',
+  onLeave: function( index, nextIndex, direction ) {
+
+    // Need to unhighlight the current (index) and highlight the (nextIndex) in the nav bar
+    navItems[index-1].css( 'color', '#ecf0f1' );
+    navItems[nextIndex-1].css( 'color', '#4484C8' );
+
+  }
 });
+
+// Handle nav clicks here
+$( '#home' ).click( function() {
+
+  if( currentView == VIEW_CONTACT ) {
+    $.fn.fullpage.moveSectionUp();
+    $.fn.fullpage.moveSectionUp();
+  } else {
+    $.fn.fullpage.moveSectionUp();
+  }
+
+  currentView = VIEW_HOME;
+} );
+
+$( '#pricing' ).click( function() {
+
+  if( currentView == VIEW_CONTACT ) {
+    $.fn.fullpage.moveSectionUp();
+  } else {
+    $.fn.fullpage.moveSectionDown();
+  }
+
+  currentView = VIEW_QUOTE_PRICE;
+
+} );
+
+$('#contact').click( function() {
+  if( currentView == VIEW_HOME ) {
+    $.fn.fullpage.moveSectionDown();
+    $.fn.fullpage.moveSectionDown();
+  } else {
+    $.fn.fullpage.moveSectionDown();
+  }
+
+  currentView = VIEW_CONTACT;
+} );
+
 
 /*
 $(function() {
@@ -79,12 +135,6 @@ $(function() {
   // 3 = repair select
   // 4 = quote price display
 
-  var VIEW_DEVICE_TYPE_SELECT         = 0;
-  var VIEW_DEVICE_MODEL_SELECT_IPHONE = 1;
-  var VIEW_DEVICE_MODEL_SELECT_IPAD   = 2;
-  var VIEW_QUOTE_PRICE                = 3;
-
-  var currentView = VIEW_DEVICE_TYPE_SELECT;
 
   var DEVICE_TYPE_KEY = 'device-type';
   var MODEL_TYPE_KEY  = "model";
