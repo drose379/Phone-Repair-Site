@@ -17,6 +17,7 @@ $(function() {
     scrollbars: false,
     scrollSpeed: 1500,
     updateHash: false,
+    touchScroll: false,
     before: function( toSection ) {
 
       // currentSection = 1 means heading to the below section
