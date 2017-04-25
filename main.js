@@ -9,7 +9,7 @@ $(document).ready( function() {
   $('.ui').css( 'padding-top', (nav / 2) );
   $('.contact').css( 'padding-top', (nav / 3) );
 
-  window.location.hash = 'home';
+  //window.location.hash = 'home';
 
 $('#fullPage').fullpage({
   verticalCentered: false,
@@ -56,7 +56,7 @@ $(function() {
   });
 });
 */
-
+/*
   $('.arrow-down').click( function() {
     $.scrollify.next();
   } );
@@ -66,6 +66,7 @@ $(function() {
   $('#home').click( function() {
     $.scrollify.previous();
   } );
+  */
 
 
 
@@ -289,7 +290,7 @@ $(function() {
 window.onhashchange = function() {
   if( window.location.hash == '#home' ) {
     //$.scrollify.previous();
-    $.scrollify.previous();
+    //$.scrollify.previous();
     console.log( 'home' );
   }
 };
