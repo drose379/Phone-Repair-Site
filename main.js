@@ -11,6 +11,12 @@ $(document).ready( function() {
 
   window.location.hash = 'home';
 
+$('#fullPage').fullpage({
+  verticalCentered: false,
+  normalScrollElements: '.scroll-container'
+});
+
+/*
 $(function() {
   $.scrollify({
     section: '.section',
@@ -49,6 +55,7 @@ $(function() {
     }
   });
 });
+*/
 
   $('.arrow-down').click( function() {
     $.scrollify.next();
@@ -265,11 +272,14 @@ $(function() {
     }
   });
 
+/*
   $('.scroll-container').hover( function() {
-    $.scrollify.disable();
+    //$.scrollify.disable();
+    $.fn.fullpage.destroy();
   }, function() {
-    $.scrollify.enable();
+    $.fn.fullpage.reBuild();
   } );
+  */
 
 
 // End document.ready
