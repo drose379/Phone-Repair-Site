@@ -9,12 +9,13 @@
    justify-content: center !important;
    align-items: center !important;
    text-align: center;
-   border-bottom: 0;
+   border-bottom: 0 !important;
  }
 
 
  .nav .nav-right {
    justify-content: center;
+   border-bottom: 0 !important;
  }
 
 .nav .nav-right .nav-item {
