@@ -564,7 +564,8 @@ font-size: 1.8em;
 
 .contact form {
   box-sizing: border-box;
-  width: 30%;
+
+  width: 40%;
 }
 
 .contact .input-item input {
@@ -678,8 +679,12 @@ font-size: 1.8em;
   flex-grow: 0;
 }
 
+.contact header {
+  width: 40%;
+}
+
 .contact header h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ecf0f1;
   margin: 0;
   padding: 0;
