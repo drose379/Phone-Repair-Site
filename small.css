@@ -162,6 +162,11 @@
   font-size: 2.5vw;
 }
 
+.contact {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 .contact form {
   width: 100%;
 }
