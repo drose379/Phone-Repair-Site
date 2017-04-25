@@ -681,6 +681,7 @@ font-size: 1.8em;
 
 .contact header {
   width: 40%;
+  margin-bottom: 2em;
 }
 
 .contact header h2 {
@@ -688,6 +689,5 @@ font-size: 1.8em;
   color: #ecf0f1;
   margin: 0;
   padding: 0;
-  margin-bottom: 2em;
   text-align: center;
 }
