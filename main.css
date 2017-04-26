@@ -551,6 +551,19 @@ font-size: 1.8em;
   justify-content: center;
   align-items: center;
   color: #ecf0f1;
+
+  background-color: green;
+}
+
+.contact .col {
+  align-items: center;
+}
+
+.contact form {
+  background-color: red;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .col {
@@ -558,9 +571,6 @@ font-size: 1.8em;
   flex-direction: column;
 }
 
-.input-item {
-  flex-grow: 1;
-}
 
 .input-item input {
   width: 100%;
@@ -643,6 +653,15 @@ font-size: 1.8em;
   color: #ecf0f1;
 }
 
+#typeSelect {
+  flex-grow: 20;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
 .contact .row {
   justify-content: center;
 }
@@ -679,6 +698,7 @@ font-size: 1.8em;
   flex-direction: row;
   align-items: center;
   margin-right: 1em;
+  margin-top: 1em;
   font-size: 1.5em;
   padding: 3px;
 }

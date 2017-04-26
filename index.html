@@ -234,7 +234,7 @@
       <h2>SEND US AN INQUIRY TO RECEIVE SHIPPING INSTRUCTIONS OR TO SET UP A LOCAL REPAIR</h2>
     </header>
 
-    <form class="col">
+    <form>
 
       <div id="contact-top" class="row">
         <div class="input-item">
@@ -248,28 +248,28 @@
         </div>
 
         <div id="sm" class="input-item">
-          <label for="device">PRICE</label>
+          <label for="price">PRICE</label>
           <input id="priceInput" readonly/>
         </div>
       </div>
 
-      <div id="contact-top" class="row">
-        <div class="input-item">
-          <label for="device">DEVICE</label>
-          <input type="text" id="deviceInput" />
-        </div>
+      <div class="row">
 
         <div class="input-item">
-          <label for="device">REPAIR</label>
-          <input id="repairInput" />
+          <label for="email">EMAIL</label>
+          <input id="emailInput" />
         </div>
 
-        <div id="sm" class="input-item">
-          <label for="device">PRICE</label>
-          <input id="priceInput" readonly/>
+        <div id="typeSelect">
+          <div class="radio">
+            <input type="radio" value="mail-in" name="select" /> <p>MAIL IN</p>
+          </div>
+          <div class="radio">
+            <input type="radio" value="local" name="select" /> <p>LOCAL</p>
+          </div>
         </div>
+
       </div>
-
 
 
 
