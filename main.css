@@ -551,8 +551,6 @@ font-size: 1.8em;
   justify-content: center;
   align-items: center;
   color: #ecf0f1;
-
-  background-color: green;
 }
 
 .contact .col {
@@ -560,7 +558,6 @@ font-size: 1.8em;
 }
 
 .contact form {
-  background-color: red;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -621,12 +618,14 @@ font-size: 1.8em;
 }
 
 
+
 .contact textarea {
   resize: none;
   padding: 0.2em;
   border: 3px solid #868686;
   background-color: #ecf0f1;
   background-color: rgba(255,255,255,0.2);
+  width: 100%;
   height: 8em;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -670,6 +669,22 @@ font-size: 1.8em;
 .form-bottom {
   width: 100%;
   margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.message-holder {
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 
@@ -722,7 +737,7 @@ font-size: 1.8em;
 
 .contact header {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .contact header h2 {
