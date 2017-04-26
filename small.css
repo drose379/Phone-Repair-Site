@@ -127,6 +127,11 @@
   justify-content: center;
 }
 
+.ipad-model-select .row {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .model {
   width: 23vw;
   margin: 1vw;
