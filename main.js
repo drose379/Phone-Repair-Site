@@ -40,6 +40,18 @@ $('#fullPage').fullpage({
     navItems[index-1].css( 'color', '#ecf0f1' );
     navItems[nextIndex-1].css( 'color', '#4484C8' );
 
+    switch( nextIndex ) {
+      case 1:
+        currentView = VIEW_HOME;
+        break;
+      case 2:
+        currentView = VIEW_QUOTE_PRICE;
+        break;
+      case 3:
+        currentView = VIEW_CONTACT;
+        break;
+    }
+
   }
 
 });
@@ -271,6 +283,7 @@ $(function() {
         $('.repair-item').click( function() {
           console.log( $(this).find('.repair-title').text());
           $('#repairInput').val( $(this).find( '.repair-title' ).text() );
+          $( '#priceInput' ).val( $(this).find( '.repair-price' ).text() );
           $.fn.fullpage.moveSectionDown();
         } );
 
@@ -319,15 +332,6 @@ $(function() {
       isAllShowing = true;
     }
   });
-
-/*
-  $('.scroll-container').hover( function() {
-    //$.scrollify.disable();
-    $.fn.fullpage.destroy();
-  }, function() {
-    $.fn.fullpage.reBuild();
-  } );
-  */
 
 
 // End document.ready

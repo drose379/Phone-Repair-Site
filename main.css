@@ -573,11 +573,14 @@ font-size: 1.8em;
   font-size: 1em;
   transition: 0.2s;
   font-family: 'Open Sans', sans-serif;
-  width: 100%;
   box-sizing: border-box;
   margin-bottom: 1em;
   background-color: rgba(255,255,255,0.2);
   color: #ecf0f1;
+}
+
+.contact .input-item {
+  flex-grow: 1;
 }
 
 .contact input:focus {
@@ -606,21 +609,30 @@ font-size: 1.8em;
   color: black;
 }
 
-.row .input-item {
-  flex-grow: 1;
-  flex-basis: 0;
-}
 
 .row .input-item:nth-child(1) {
   margin-right: 1em;
 }
 
 .row .input-item:nth-child(2) {
-  margin-left: 1em;
+  margin-right: 1em;
 }
 
-.input-item {
+.row .input-item:nth-child(3) {
+  width: 5%;
 }
+
+.row .input-item:nth-child(3) input {
+  border: 3px solid #4484C8;
+  background-color: rgba(255,255,255,0.2) !important;
+}
+
+.row .input-item:nth-child(3):focus {
+  border: 3px solid #4484C8;;
+  background-color: rgba(255,255,255,0.2) !important;
+  color: #ecf0f1;
+}
+
 
 .contact .row {
   justify-content: center;
