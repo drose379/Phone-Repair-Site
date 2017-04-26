@@ -592,7 +592,7 @@ font-size: 1.8em;
 
 .input-item:nth-child(3) {
   flex-grow: 0;
-  flex-basis: 200px;
+  flex-basis: 300px;
 }
 
 
