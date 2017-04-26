@@ -36,6 +36,14 @@ $('#fullPage').fullpage({
       $('.home-content').fadeIn();
     }
 
+    if( nextIndex == 3 ) {
+      $('.ui').fadeOut(100);
+    }
+
+    if( nextIndex == 2 ) {
+      $('.ui').fadeIn();
+    }
+
     // Need to unhighlight the current (index) and highlight the (nextIndex) in the nav bar
     navItems[index-1].css( 'color', '#ecf0f1' );
     navItems[nextIndex-1].css( 'color', '#4484C8' );
