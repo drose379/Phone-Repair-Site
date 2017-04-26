@@ -101,58 +101,6 @@ $('#contact').click( function() {
 } );
 
 
-/*
-$(function() {
-  $.scrollify({
-    section: '.section',
-    scrollbars: false,
-    scrollSpeed: 1500,
-    updateHash: false,
-    touchScroll: false,
-    before: function( toSection ) {
-
-      // currentSection = 1 means heading to the below section
-      // currentSection of 0 means heading to the above home section
-
-      if( toSection == 1 ) {
-
-        window.location.hash = 'pricing';
-
-        $('.home-content').animate({opacity: 0}, 70);
-
-        $('#home').animate( {color: '#ecf0f1'}, 300 );
-        $('#pricing').animate({color: '#4484C8'}, 300 );
-
-      } else if( toSection == 0 ) {
-
-        window.location.hash = 'home';
-
-        setTimeout( function() {
-          $('.home-content').animate({opacity: 1}, 500);
-
-          $('#pricing').animate( {color: '#ecf0f1'}, 300 );
-          $('#home').animate( {color: '#4484C8'}, 300 );
-
-        }, 300 );
-
-      }
-
-    }
-  });
-});
-*/
-/*
-  $('.arrow-down').click( function() {
-    $.scrollify.next();
-  } );
-  $('#pricing').click( function() {
-    $.scrollify.next();
-  } );
-  $('#home').click( function() {
-    $.scrollify.previous();
-  } );
-  */
-
 
 
 // Pricing UI

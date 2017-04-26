@@ -553,6 +553,11 @@ font-size: 1.8em;
   color: #ecf0f1;
 }
 
+#contact-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contact .col {
   align-items: center;
 }
