@@ -187,8 +187,9 @@
   margin: 0;
   background-color: red;
   width: 100%;
-  font-size: 0.8em;
+  font-size: 2em;
   height:200px;
+  overflow-y: scroll;
 }
 
 #about-area #info {
