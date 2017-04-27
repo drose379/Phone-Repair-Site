@@ -191,7 +191,7 @@
   height:200px;
 }
 
-#about-area ul {
+#about-area #info {
   overflow-y: scroll;
 }
 
