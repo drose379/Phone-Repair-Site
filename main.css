@@ -751,11 +751,14 @@ font-size: 1.8em;
   cursor: pointer;
   box-sizing: border-box;
   transition: 0.2s;
+  background-color: #dadada;
 }
 
 #formBottom #sendContainer button:hover {
   border: 3px solid #4484C8;
 }
+
+#formBottom #sendContainer button:active {background-color: #b6b6b6;}
 
 /* REPAIR INFO CONTAINER*/
 #about-area #repairTypeTitle {
