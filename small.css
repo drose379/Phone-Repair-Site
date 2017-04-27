@@ -177,8 +177,16 @@
   display: none;
 }
 
-#about-area ul {
-  margin-left: 0;
+.contact {
+  padding: 0;
+  margin: 0;
+}
+
+#about-area  {
+  padding: 0;
+  margin: 0;
+  background-color: red;
+  width: 100%;
   font-size: 0.8em;
   height:200px;
   overflow-y: scroll;
