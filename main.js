@@ -21,12 +21,19 @@ $(document).ready( function() {
 
   //window.location.hash = 'home';
 
+  var navOrigPaddingTop = $('.nav').css('padding-top');
   var navItems = [$('#home'), $('#pricing'), $('#contact')];
 
 $('#fullPage').fullpage({
   verticalCentered: false,
   normalScrollElements: '.scroll-container',
   onLeave: function( index, nextIndex, direction ) {
+
+    if( nextIndex != 1 ) {
+      $('.nav').animate( {'padding-top': 10}, 300 );
+    } else {
+      $('.nav').animate( {'padding-top': navOrigPaddingTop}, 300 );
+    }
 
     if( index == 1 ) {
       $('.home-content').fadeOut( 100 );

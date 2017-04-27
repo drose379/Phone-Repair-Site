@@ -560,6 +560,7 @@ font-size: 1.8em;
 
 #contact-bottom-area {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -568,11 +569,11 @@ font-size: 1.8em;
 }
 
 #contact-area {
-  flex: 2 0 0;
+  flex: 2 0 300px;
 }
 
 #about-area {
-  flex: 2 0 0;
+  flex: 2 0 300px;
   margin-left: 3em;
 }
 
