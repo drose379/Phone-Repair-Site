@@ -173,7 +173,7 @@
 }
 
 #contact-bottom-area form {
-  display: none;
+  opacity: 0;
 }
 
 #about-area {
