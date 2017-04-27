@@ -94,7 +94,7 @@
     </div>
 
   </section>
-  
+
   <div class="section pricing-ui">
     <div class="ui">
       <section class="device-type-select">
@@ -227,7 +227,83 @@
   </div>
 
   <div class="section contact">
+    <!--
+    Layout:
 
+    [TITLE UP HERE]
+     [HALF][HALF]    LEFT HALF IS DIRECTIONS / INFO. RIGHT HALF IS FORM
+    -->
+
+    <div id="top-title-area"></div>
+    <div id="contact-bottom-area">
+
+      <div class="contact-container" id="contact-area">
+        <div id="price-container">
+          <h2 id="priceVal" />
+        </div>
+
+        <div class="row">
+
+          <div class="top-input">
+            <label for="deviceType">DEVICE</label>
+            <input id="deviceType" />
+          </div>
+
+          <div class="top-input">
+            <label for="deviceType">REPAIR</label>
+            <input id="repairType" />
+          </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="top-input">
+          <label for="email">EMAIL</label>
+          <input id="email" />
+        </div>
+
+        <div class="top-input">
+          <label style="opacity: 0" for="shippingType">SA</label>
+          <div id="shipTypeSelect" class="row">
+
+
+            <div id="local" class="equal-width row">
+
+              <div id="localSelect" class="shipping-button" data-type="local">
+                <h4>LOCAL</h4>
+                <img id="localCheck" class="checked" src="res/check-accent.svg" />
+              </div>
+
+            </div>
+
+
+            <div id="mailin" class="equal-width row">
+
+              <div id="mailinSelect" class="shipping-button" data-type="mailin">
+                <h4>MAIL-IN</h4>
+                <img id="mailinCheck" class="checked" src="res/check-accent.svg" />
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+    </div>
+
+
+
+      </div>
+      <div class="contact-container" id="about-area">
+
+      </div>
+    </div>
+
+
+    <!--
       <div class="col">
       <header>
         <h2>SEND US AN INQUIRY TO RECEIVE SHIPPING INSTRUCTIONS OR TO SET UP A LOCAL REPAIR</h2>
@@ -285,6 +361,7 @@
 
       </form>
     </div>
+  -->
   </div>
 
 

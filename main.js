@@ -206,7 +206,7 @@ $('#contact').click( function() {
 
   $('.model').click( function() {
     var model = $(this).data()['model'];
-    $('#deviceInput').val( $(this).data()['name'] );
+    $('#deviceType').val( $(this).data()['name'] );
     // get name from here
 
     $('.iphone-model-select').find( "[data-model='"+ uiState[MODEL_TYPE_KEY] +"']" ).css('background-color','rgba(255,255,255,0.1)');
@@ -238,8 +238,8 @@ $('#contact').click( function() {
 
         $('.repair-item').click( function() {
           console.log( $(this).find('.repair-title').text());
-          $('#repairInput').val( $(this).find( '.repair-title' ).text() );
-          $( '#priceInput' ).val( $(this).find( '.repair-price' ).text() );
+          $('#repairType').val( $(this).find( '.repair-title' ).text() );
+          $( '#priceVal' ).text( $(this).find( '.repair-price' ).text() );
           $.fn.fullpage.moveSectionDown();
         } );
 
@@ -262,14 +262,76 @@ $('#contact').click( function() {
 
   } );
 
+  $('.shipping-button').click(function() {
+    var check = $(this).find('.checked');
+    var label = $(this).find('h4');
+
+    $(this).css('border','3px solid #4484C8');
+
+    label.animate( {'margin-right': 30}, 50 );
+    check.animate( {opacity: 1}, 50 );
+
+
+    var out;
+    var outLabel;
+    var outCheck;
+
+    if( $(this).data()['type'] == 'local' ) {
+      out = $('#mailinSelect');
+      outLabel = $('#mailinSelect').find('h4');
+      outCheck = $('#mailinSelect').find('.checked');
+    } else {
+      out = $('#localSelect');
+      outLabel = $('#localSelect').find('h4');
+      outCheck = $('#localSelect').find('.checked');
+    }
+
+    out.css( 'border', '3px solid rgba(255,255,255, 0.2)' );
+    outLabel.animate( {'margin-right': 0}, 50 );
+    outCheck.animate( {opacity: 0}, 50);
+
+
+
+  });
+
+  /*
+  $('.shipping-button').click( function() {
+    var check = $(this).find('.checked');
+    var label = $(this).find('h4');
+
+    $(this).css('border','3px solid #4484C8');
+
+    label.animate({'margin-right': 10},50);
+    setTimeout(function(){
+      check.fadeIn();
+    },50);
+
+    if( $(this).data()['type'] == 'mailin' ) {
+      var localCheck = $('#localSelect').find('.checked');
+      var localLabel = $('#localSelect').find('h4');
+
+      $('#localSelect').css('border','3px solid rgba(255,255,255, 0.2)');
+      localLabel.css('margin-right', 0);
+
+      localCheck.fadeOut();
+      //localLabel.animate({'margin-right': 10},5);
+
+    } else {
+      var mailinCheck = $('#mailin').find('.checked');
+      var mailinLabel = $('#mailin').find('h4');
+
+      $('#mailin').css('border','3px solid rgba(255,255,255, 0.2)');
+      mailinLabel.css('margin-right', 0);
+
+      mailinCheck.fadeOut();
+    }
+
+  });
+*/
+
 
   var repairCount = 0;
 
-  /** Look into adding tooltip on repair button hovers */
-
-  $('.hoverable-repair').click( function() {
-    console.log( 'Repaur click' );
-  } )
 
 
   var isAllShowing = false;

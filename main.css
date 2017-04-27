@@ -553,50 +553,146 @@ font-size: 1.8em;
   color: #ecf0f1;
 }
 
-#contact-top {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact .col {
-  align-items: center;
-}
-
-.contact form {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.input-item input {
+.contact #top-title-area {
   width: 100%;
 }
 
-.input-item {
-  flex-grow: 10;
+
+#contact-bottom-area {
+  display: flex;
+  width: 100%;
 }
 
-.input-item:nth-child(1) {
-  margin-right: 1em;
+.contact-container {
+  flex: 1 0 0;
 }
 
-.input-item:nth-child(2) {
-  margin-right: 1em;
+#contact-area {
+
 }
 
-.input-item:nth-child(3) {
-  flex-grow: 0;
-  flex-basis: 300px;
+#about-area {
+
+}
+
+#price-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+#priceVal {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  margin-right: 2.5%;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  border-radius: 5%;
+  color: #4484C8;
+  font-size: 2em;
+}
+
+.top-input {
+  flex: 1 0 0;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.top-input:nth-child(1) {
+  margin-left: 0;
+}
+
+.top-input input {
+  width: 100%;
+
+  padding: 0.2em;
+  border: 3px solid #868686;
+  font-size: 1.3em;
+  transition: 0.2s;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  background-color: rgba(255,255,255,0.2);
+  color: #ecf0f1;
+
+}
+
+.top-input input:focus {
+  border: 3px solid #4484C8;
+  background-color: #ecf0f1;
+  color: black;
+}
+
+.top-input label {
+  font-size: 1.2em;
+}
+
+#shipTypeSelect #local {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+}
+
+#shipTypeSelect #mailin {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+}
+
+.shipping-button {
+  padding: 0.5em;
+  width: 50%;
+  border: 3px solid rgba(255,255,255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.shipping-button h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.shipping-button:hover {
+  border: 3px solid #4484C8;
+}
+
+.shipping-button .checked img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.shipping-button .checked {
+  width: 1.5em;
+  position: absolute;
+  right: 1em;
+  opacity: 0;
+}
+
+#local .shipping-button {
+  border: 3px solid #4484C8;
+}
+
+#local .shipping-button h4 {
+  margin-right: 30px;
+}
+
+#local .shipping-button .checked {
+  opacity: 1;
 }
 
 
 
+
+/*
 .contact label {
   font-size: 1.5em;
 }
@@ -752,3 +848,4 @@ font-size: 1.8em;
   padding: 0;
   text-align: center;
 }
+*/
