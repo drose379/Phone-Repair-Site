@@ -30,7 +30,7 @@ $('#fullPage').fullpage({
   onLeave: function( index, nextIndex, direction ) {
 
     if( nextIndex != 1 ) {
-      $('.nav').animate( {'padding-top': 10}, 300 );
+      $('.nav').animate( {'padding-top': '0.5em'}, 300 );
     } else {
       $('.nav').animate( {'padding-top': navOrigPaddingTop}, 300 );
     }
