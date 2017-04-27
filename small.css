@@ -185,6 +185,10 @@
   flex-direction: column;
 }
 
+#about-area {
+  margin-left: 0;
+}
+
 
 /*
 .contact {
