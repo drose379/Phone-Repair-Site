@@ -560,7 +560,7 @@ font-size: 1.8em;
 
 #contact-bottom-area {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   width: 100%;
 }
 
