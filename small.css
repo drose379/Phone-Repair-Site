@@ -177,9 +177,10 @@
   display: none;
 }
 
-#about-area {
+#about-area ul {
   margin-left: 0;
   font-size: 0.8em;
+  height:200px;
   overflow-y: scroll;
 }
 
