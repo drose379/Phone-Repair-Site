@@ -268,7 +268,7 @@ $('#contact').click( function() {
 
     $(this).css('border','3px solid #4484C8');
 
-    label.animate( {'margin-right': 30}, 50 );
+    //label.animate( {'margin-right': 30}, 50 );
     check.animate( {opacity: 1}, 50 );
 
 
@@ -287,7 +287,7 @@ $('#contact').click( function() {
     }
 
     out.css( 'border', '3px solid rgba(255,255,255, 0.2)' );
-    outLabel.animate( {'margin-right': 0}, 50 );
+    //outLabel.animate( {'margin-right': 0}, 50 );
     outCheck.animate( {opacity: 0}, 50);
 
 
