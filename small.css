@@ -189,6 +189,9 @@
   width: 100%;
   font-size: 0.8em;
   height:200px;
+}
+
+#about-area ul {
   overflow-y: scroll;
 }
 
