@@ -746,8 +746,8 @@ font-size: 1.8em;
 }
 
 #formBottom #sendContainer button {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   border: 3px solid #868686;
   cursor: pointer;
   box-sizing: border-box;
@@ -762,6 +762,10 @@ font-size: 1.8em;
 #formBottom #sendContainer button:active {background-color: #b6b6b6;}
 
 /* REPAIR INFO CONTAINER*/
+#about-area {
+
+}
+
 #about-area #repairTypeTitle {
   color: #ecf0f1;
   text-align: center;
