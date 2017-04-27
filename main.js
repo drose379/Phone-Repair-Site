@@ -26,7 +26,7 @@ $(document).ready( function() {
 
 $('#fullPage').fullpage({
   verticalCentered: false,
-  normalScrollElements: '.scroll-container,#about-area',
+  normalScrollElements: '.scroll-container,#info',
   onLeave: function( index, nextIndex, direction ) {
 
     if( nextIndex != 1 ) {
