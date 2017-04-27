@@ -569,11 +569,15 @@ font-size: 1.8em;
 }
 
 #contact-area {
-  flex: 2 0 300px;
+  /*flex: 2 0 300px;*/
+  flex-grow: 2;
 }
 
 #about-area {
+  /*
   flex: 2 0 300px;
+  */
+  flex-grow: 2;
   margin-left: 3em;
 }
 
