@@ -179,7 +179,7 @@
 #about-area {
   margin-left: 0;
   font-size: 0.8em;
-  display: none;
+  opacity: 0;
 }
 
 
