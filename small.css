@@ -201,6 +201,10 @@
   margin-left: 0.2em;
 }
 
+.checked {
+  opacity: 0 !important;
+}
+
 #about-area  {
   padding: 0;
   margin: 0;
