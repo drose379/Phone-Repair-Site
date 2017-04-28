@@ -182,6 +182,10 @@
   margin: 0;
 }
 
+.top-input input {
+  margin-bottom: 0;
+}
+
 #about-area  {
   padding: 0;
   margin: 0;
