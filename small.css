@@ -191,6 +191,11 @@
   font-size: 0.8em;
 }
 
+#formBottom #sendContainer button {
+  width: 2em;
+  height: 2em;
+}
+
 #about-area  {
   padding: 0;
   margin: 0;
