@@ -17,7 +17,7 @@ $(document).ready( function() {
   }
 
   $('.ui').css( 'padding-top', (nav / 2) );
-  $('.contact').css( 'padding-top', (nav / 3) );
+  $('.contact').css( 'padding-top', nav );
 
   //window.location.hash = 'home';
 
