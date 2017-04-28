@@ -178,14 +178,13 @@
 }
 
 .contact {
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
 }
 
 #about-area  {
   padding: 0;
   margin: 0;
-  background-color: red;
   width: 100%;
   font-size: 1em;
   overflow-y: scroll;
