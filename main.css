@@ -678,7 +678,7 @@ font-size: 1.8em;
 .shipping-button .checked {
   width: 1.5em;
   position: absolute;
-  right: 5%;
+  top: -1.8em;
   opacity: 0;
 }
 
