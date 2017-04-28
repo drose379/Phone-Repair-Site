@@ -1,5 +1,5 @@
 .nav {
-  padding-top: 1em !important;
+  padding-top: 0.2em !important;
   padding-left: 3em;
   padding-right: 3em;
   flex-direction: column !important;
@@ -188,7 +188,6 @@
   background-color: red;
   width: 100%;
   font-size: 2em;
-  height:200px;
   overflow-y: scroll;
 }
 

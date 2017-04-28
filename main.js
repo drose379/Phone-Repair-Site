@@ -17,7 +17,7 @@ $(document).ready( function() {
   }
 
   $('.ui').css( 'padding-top', (nav / 2) );
-  $('.contact').css( 'padding-top', (nav / 3) );
+  $('.contact').css( 'padding-top', nav );
 
   //window.location.hash = 'home';
 
@@ -27,7 +27,6 @@ $(document).ready( function() {
 $('#fullPage').fullpage({
   verticalCentered: false,
   normalScrollElements: '.scroll-container ,#about-area',
-  normalScrollElementTouchThreshold: 1,
   onLeave: function( index, nextIndex, direction ) {
 
     if( nextIndex != 1 ) {
