@@ -204,6 +204,10 @@
   width: 50%;
 }
 
+.shipping-button {
+  padding: 0 !important;
+}
+
 .checked {
   opacity: 0 !important
 }
