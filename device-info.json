@@ -190,5 +190,67 @@
       "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
       "vibrator": {"name": "Vibrator", "price": "$30"}
     }
+  },
+  "ipad-orig": {
+    "name": "iPAD",
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
+  },
+  "ipad-mini": {
+    "name": "iPAD MINI",
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
+  },
+  "ipad-pro": {
+    "name" : "iPAD PRO LG",
+    "repairs": {
+      "screen": {"name": "Screen Replacement","price": "$100"},
+      "batt": {"name": "Battery Replacement","price": "$30"},
+      "charging-port": {"name": "Charging Port","price": "$30"},
+      "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+      "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+      "housing": {"name": "Housing", "price": "$70"},
+      "front-cam": {"name": "Front Camera", "price": "$40"},
+      "back-cam": { "name": "back-cam", "price": "$40"},
+      "front-speaker": {"name": "Front Speaker", "price": "$30"},
+      "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+      "vibrator": {"name": "Vibrator", "price": "$30"}
+    }
+  },
+  "ipad-pro-sm": "iPAD PRO SM",
+  "repairs": {
+    "screen": {"name": "Screen Replacement","price": "$100"},
+    "batt": {"name": "Battery Replacement","price": "$30"},
+    "charging-port": {"name": "Charging Port","price": "$30"},
+    "touch-ic":{"name": "Broken Touchscreen","price": "$120"},
+    "other-buttons": {"name": "Power / Volume Buttons","price": "$50"},
+    "housing": {"name": "Housing", "price": "$70"},
+    "front-cam": {"name": "Front Camera", "price": "$40"},
+    "back-cam": { "name": "back-cam", "price": "$40"},
+    "front-speaker": {"name": "Front Speaker", "price": "$30"},
+    "loud-speaker": {"name": "Loud Speaker", "price": "$30"},
+    "vibrator": {"name": "Vibrator", "price": "$30"}
   }
 }
