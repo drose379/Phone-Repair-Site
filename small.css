@@ -184,13 +184,18 @@
 
 .top-input input {
   margin-bottom: 0;
+  font-size: 0.8em;
+}
+
+.top-input label {
+  font-size: 0.8em;
 }
 
 #about-area  {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-size: 1em;
+  font-size: 0.7em;
   overflow-y: scroll;
 }
 
