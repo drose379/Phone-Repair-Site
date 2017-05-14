@@ -17,7 +17,7 @@ $(document).ready( function() {
   } else {
     $('.contact').css( 'padding-top', nav );
   }
-  
+
   $('.ui').css( 'padding-top', (nav / 2) );
 
 
@@ -31,6 +31,63 @@ $('#fullPage').fullpage({
   verticalCentered: false,
   normalScrollElements: '.scroll-container ,#about-area',
   onLeave: function( index, nextIndex, direction ) {
+
+    if( nextIndex != 1 ) {
+      $('.nav').animate( {'padding-top': '0.5em'}, 300 );
+    } else {
+      $('.nav').animate( {'padding-top': navOrigPaddingTop}, 300 );
+      $('.nav-left').css( 'background-color', 'transparent' );
+      $('.nav-right').css( 'background-color', 'transparent' );
+    }
+
+    // Options of index and nextIndex:
+    // 1 -> 2
+    // 1 -> 3
+    // 2 -> 1
+    // 2 -> 3
+    // 3 -> 1
+    // 3 -> 2
+
+    if( nextIndex == 2 ) {
+
+      if( index == 1 ) {
+        // Fade out home
+
+      } else if( index == 3 ) {
+
+        // Fade out contact
+      }
+
+      // Fade in pricing ui
+
+    }
+
+    if( nextIndex == 3 ) {
+
+      if( index == 1 ) {
+        //Fade out home
+      } else if( index == 2 ) {
+        // Fade out pricing ui
+      }
+
+      // Fade in contact
+
+    }
+
+    if( nextIndex == 1 ) {
+
+      if( index == 2 ) {
+        // Fade out pricing ui
+      } else if( index == 3 ) {
+        // Fade out contact
+      }
+
+      // Fade in home
+    }
+
+    /*
+
+      THIS NEEDS TO BE CLEANED UP. ALSO NEED TO FADE STUFF BACK IN SO THAT IT DOES NOT GO BELOW THE NAV BAR
 
     if( nextIndex != 1 ) {
       $('.nav').animate( {'padding-top': '0.5em'}, 300 );
@@ -69,6 +126,8 @@ $('#fullPage').fullpage({
         currentView = VIEW_CONTACT;
         break;
     }
+
+    */
 
   }
 
